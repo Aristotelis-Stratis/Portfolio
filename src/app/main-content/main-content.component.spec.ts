@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AboveTheFoldComponent } from './above-the-fold.component';
+import { MainContentComponent } from './main-content.component';
 
-describe('AboveTheFoldComponent', () => {
-  let component: AboveTheFoldComponent;
-  let fixture: ComponentFixture<AboveTheFoldComponent>;
+describe('MainContentComponent', () => {
+  let component: MainContentComponent;
+  let fixture: ComponentFixture<MainContentComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AboveTheFoldComponent]
+      imports: [MainContentComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(AboveTheFoldComponent);
+    fixture = TestBed.createComponent(MainContentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
