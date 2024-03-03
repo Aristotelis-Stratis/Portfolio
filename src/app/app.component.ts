@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { ImprintComponent } from './imprint/imprint.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainContentComponent } from './main-content/main-content.component';
+import { LandingPageComponent } from './main-content/landing-page/landing-page.component';
 
 @Component({
   selector: 'app-root',
