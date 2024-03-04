@@ -14,7 +14,10 @@ nav {
 }
 
 .logo {
-    >span {
+    cursor: pointer;
+    >a {
+        color:white;
+        text-decoration: none;
         font-size: 28px;
         font-weight: 700;
         padding-left: 100px;
@@ -71,4 +74,18 @@ nav {
 .mobileNav,
 .mobileMenu {
     display: none !important;
+}
+
+
+@media (max-width: 321px) {
+    .logo {
+        >a {
+            padding-left: 30px;
+        }
+    }
+    .desktopNav {
+        display: none !important;
+    }
+
+
 }
