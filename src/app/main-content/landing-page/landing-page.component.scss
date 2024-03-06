@@ -64,7 +64,7 @@ section {}
     line-height: 108px;
 }
 
-.titleThree {
+.titleThree span {
     font-size: 60.4px;
     font-weight: 400;
     color: rgba(75, 71, 255, 1);
@@ -171,17 +171,104 @@ section {}
 }
 
 
-@media (max-width: 321px) {
+@media (max-width: 841px) {
     .socials {
         width: 100%;
         flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .myImageContainer {
+        background-size: 450px;
+        height: 400px;
+        margin-top: 20px;
+    }
+
+    .myImageContainer img {
+        height: 100%;
+    }
+
+    .lpImage {
+        width: 100%;
+        height: 100%;
     }
 
     .landingPage {
         flex-direction: column;
+        padding: 0;
+    }
+
+    .landingPageBackground {
+        top: 285px;
+        height: 450px;
+        // border: 2px solid red;
     }
 
     .lpText {
+        // border: 2px solid red;
+        height: unset;
         width: 100%;
     }
+
+    .myNameContainer {
+        height: unset;
+        justify-content: center;
+    }
+
+    .socials {
+        margin-top: 35px;
+    }
+
+    .social-links {
+        flex-direction: row;
+        position: unset;
+    }
+
+    .blueLine {
+        position: absolute;
+        left: 0;
+        width: 15%;
+    }
+
+    .scroll-down {
+        display: none;
+    }
+
+    .titleOne {
+        align-items: center;
+    }
+
+    .titleOne span {
+        font-size: 25.5px;
+        padding-top: 5px;
+    }
+
+    .titleTwo span {
+        font-size: 30.5px;
+        line-height: 26px;
+    }
+
+    .titleThree span {
+        font-size: 25.2px;
+        line-height: 33.5px;
+    }
+
+    .letsTalkContainer {
+        padding-top: 25px;
+    }
+
+    .letsTalkButton {
+        padding: 10px 20px;
+        font-size: 16px;
+
+        &:hover {
+            padding: 10px 30px;
+            margin: 0px 0px;
+        }
+    }
+
+    .myEmail {
+        display: none !important;
+    }
+
 }
