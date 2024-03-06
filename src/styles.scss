@@ -9,9 +9,13 @@ html {
     font-family: 'Poppins';
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body::-webkit-scrollbar {
     width: 15px;
-    background-color: rgb(21, 28, 47);
+    background-color: transparent;
 }
 
 body::-webkit-scrollbar-track {
