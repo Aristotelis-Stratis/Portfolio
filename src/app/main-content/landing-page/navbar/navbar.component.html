@@ -1,4 +1,4 @@
-<nav>
+<div class="nav">
     <div class="logo">
         <a href="/"><span>Aristotelis</span></a>
     </div>
@@ -9,6 +9,16 @@
         <a href="/">Portfolio</a>
     </div>
 
-    <div class="mobileNav"></div>
-    <div class="mobileMenu"></div>
-</nav>
+    <div class="mobileMenu" (click)="toggleMenu()">
+        <img *ngIf="!isMenuOpen && transitionState !== 'open'" src="/assets/img/burger-menu/burger.png" alt="Open Menu">
+        <img *ngIf="transitionState === 'open'" src="/assets/img/burger-menu/burger_transition.png" alt="Opening Menu">
+        <img *ngIf="isMenuOpen && transitionState !== 'close'" src="/assets/img/burger-menu/close.png" alt="Close Menu">
+        <img *ngIf="transitionState === 'close'" src="/assets/img/burger-menu/close_transition.png" alt="Closing Menu">
+    </div>
+    <div class="mobileNav" [class.open]="isMenuOpen">
+        <a href="/">About me</a>
+        <a href="/">My skills</a>
+        <a href="/">Portfolio</a>
+        <a href="/">Contact</a>
+    </div>
+</div>
