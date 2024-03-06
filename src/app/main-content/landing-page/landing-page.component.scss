@@ -1,5 +1,3 @@
-section {}
-
 .landingPage {
     display: flex;
     flex-direction: row;
@@ -144,9 +142,15 @@ section {}
         color: white;
         text-decoration: none;
         cursor: pointer;
-    }
 
-    &:hover {}
+        img {
+            transition: transform 0.2s ease;
+
+            &:hover {
+                transform: scale(1.3);
+            }
+        }
+    }
 }
 
 .blueLine {
