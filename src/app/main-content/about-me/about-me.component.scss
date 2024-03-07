@@ -8,8 +8,8 @@ section {
     z-index: 999;
     box-sizing: border-box;
     padding-left: 100px;
-    padding-bottom: 200px;
-    margin-top: 250px;
+    padding-bottom: 150px;
+    margin-top: 150px;
 }
 
 .aboutText {
@@ -53,7 +53,7 @@ section {
     background-size: cover;
     background-position: 50% 0%;
     background-repeat: no-repeat;
-    border: 2px solid rgba(0, 190, 232, 1);
+    border: 4px solid rgba(0, 190, 232, 1);
     border-radius: 50%;
 
     >img {
@@ -64,7 +64,7 @@ section {
 }
 
 .blueLine {
-    height: 2px;
+    height: 4px;
     width: 30%;
     background-color: rgba(0, 190, 232, 1)
 }
