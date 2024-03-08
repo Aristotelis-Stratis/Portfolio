@@ -91,7 +91,7 @@
     font-family: 'Poppins';
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
     cursor: pointer;
-    transition: background-color 0.2s ease, padding 0.2s ease, margin 0.2s ease;
+    transition: background-color 125ms ease, padding 125ms ease, margin 125ms ease;
 
     &:hover {
         background-color: rgba(75, 71, 255, 1);
@@ -144,7 +144,7 @@
         cursor: pointer;
 
         img {
-            transition: transform 0.2s ease;
+            transition: transform 125ms ease;
 
             &:hover {
                 transform: scale(1.3);
