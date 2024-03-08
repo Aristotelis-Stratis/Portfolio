@@ -1,34 +1,37 @@
 .project {
-    border: 2px solid green;
+    // border: 2px solid green;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 100px;
     margin-bottom: 100px;
     gap: 100px;
+    position: relative;
+    z-index: 1000;
 }
 
-.flex-row {
+.flexRow {
     flex-direction: row;
-
 }
 
-.flex-row-reverse {
+.flexRowReverse {
     flex-direction: row-reverse;
 }
 
-.text-left {
+.textLeft {
     align-items: start;
+    text-align: left;
 }
 
-.text-right {
+.textRight {
     align-items: end;
+    text-align: right;
 }
 
 .projectImage {
     width: 550px;
     height: 100%;
-    border: 2px solid teal;
+    // border: 2px solid teal;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,7 +43,8 @@
 
 .projectText {
     height: 100%;
-    border: 2px solid red;
+    width: 500px;
+    // border: 2px solid red;
     box-sizing: border-box;
     padding-top: 65px;
     display: flex;
@@ -120,7 +124,7 @@
     width: 137px;
     height: 58px;
     border: 1px solid rgba(0, 190, 232, 1);
-    background-color: transparent;
+    background-color: rgba(20, 29, 47, 1);
 }
 
 .reverse {
@@ -128,4 +132,96 @@
         flex-direction: row-reverse;
     }
 
+}
+
+@media(max-width:1241px) {
+    section {
+        padding: 0px 50px;
+    }
+
+    .project {
+        gap: 0;
+    }
+
+    .projectText {
+        width: 400px;
+    }
+
+    .projectImage {
+        >img {
+            width: 450px;
+        }
+    }
+}
+
+@media(max-width:841px) {
+
+    .flexRow,
+    .flexRowReverse {
+        flex-direction: column;
+
+    }
+
+    .textLeft,
+    .textRight,
+    .projectText {
+        align-items: center;
+    }
+
+    .projectText {
+        width: 450px;
+        padding-top: 0;
+    }
+
+    .projectImage {
+        width: unset;
+        >img {
+            width: 350px;
+        }
+    }
+
+    .projectDescription {
+        text-align: center;
+    }
+
+    .projectButtonContainer {
+        gap: 50px;
+
+        >button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    }
+
+    .testButton {
+        width: 122px;
+        height: 48px;
+    }
+
+    .githubButton {
+        width: 102px;
+        height: 48px;
+    }
+}
+
+@media(max-width:600px) {
+    .projectText {
+        width: 350px;
+    }
+}
+
+@media (max-width: 425px) {
+    .projectButtonContainer {
+        gap: 25px;
+    }
+
+    .projectImage {
+        >img {
+            width: 300px;
+        }
+    }
+
+    .projectText {
+        width: 300px;
+    }
 }

@@ -1,13 +1,15 @@
 section {
-    padding-bottom: 150px;
     margin-top: 150px;
     display: flex;
     position: relative;
     z-index: 999;
     flex-direction: column;
     box-sizing: border-box;
-    padding: 0px 100px;
-    border: 2px solid red;
+    padding-top: 0px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 150px;
+    // border: 2px solid red;
 }
 
 .portfolioHeader {
@@ -17,6 +19,7 @@ section {
     align-items: center;
     flex-direction: column;
     gap: 40px;
+    z-index: 1000;
 }
 
 .headerTitle {
@@ -55,7 +58,103 @@ section {
 }
 
 .myPortfolio {
-    border: 2px solid yellow;
+    // border: 2px solid yellow;
+    z-index: 1000;
     width: 100%;
 }
 
+.portfolioFirstBackground {
+    background-image: url('/assets/img/blur-shapes/part_4.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    z-index: 999;
+    height: 748.73px;
+    width: 636px;
+}
+
+.portfolioSecondBackground {
+    background-image: url('/assets/img/blur-shapes/part_5.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: 999;
+    height: 951.44px;
+    width: 428.59px;
+    right: 25px;
+    top: 70%;
+    transform: rotate(70deg);
+}
+
+
+@media(max-width:1241px) {
+    section {
+        padding: 0px 50px;
+    }
+
+    .portfolioFirstBackground {
+        left: -150px;
+    }
+}
+
+@media(max-width:841px) {
+    section {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .headerTitle {
+        padding-left: 25px;
+        padding-right: 25px;
+
+        >h2 {
+            font-size: 66px;
+        }
+    }
+
+    .blueLine {
+        width: 85%;
+    }
+
+    .portfolioFirstBackground {
+        top: 51%;
+        left: 0;
+        width: 400px;
+    }
+
+    .portfolioSecondBackground {
+        top: 85%;
+    }
+}
+
+@media(max-width: 600px) {
+    .headerTitle {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+@media(max-width:525px) {
+    .blueLine {
+        width: 90%;
+    }
+}
+
+@media(max-width:425px) {
+    section {
+        padding: 0;
+    }
+
+    .headerTitle {
+        padding-left: 8px;
+        padding-right: 8px;
+
+        >h2 {
+            font-size: 45px;
+        }
+    }
+
+
+}

@@ -1,8 +1,8 @@
-<div class="project" [ngClass]="{ 'flex-row': project.flexDirection === 'row', 'flex-row-reverse': project.flexDirection === 'row-reverse' }">
+<div class="project" [ngClass]="{ 'flexRow': project.flexDirection === 'row', 'flexRowReverse': project.flexDirection === 'row-reverse' }">
     <div class="projectImage">
         <img [src]="project.imageUrl" [alt]="project.title">
     </div>
-    <div class="projectText" [ngClass]="{ 'text-left': project.textAlignment === 'left', 'text-right': project.textAlignment === 'right' }">
+    <div class="projectText" [ngClass]="{ 'textLeft': project.textAlignment === 'left', 'textRight': project.textAlignment === 'right' }">
         <div class="projectTitle">
             <span>{{ project.title }}</span>
         </div>

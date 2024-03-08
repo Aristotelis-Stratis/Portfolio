@@ -15,7 +15,7 @@ export class MyPortfolioComponent {
     {
       title: 'El Pollo Loco',
       stack: 'JavaScript | HTML | CSS',
-      description: 'Jump, run and throw game based on object-oriented approach...',
+      description: 'A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.',
       imageUrl: '/assets/img/projects/el_pollo_loco.png',
       liveTestUrl: 'https://live-test-url',
       githubUrl: 'https://github.com/Aristotelis-Stratis',
@@ -25,7 +25,7 @@ export class MyPortfolioComponent {
     {
       title: 'JOIN',
       stack: 'JavaScript | HTML | CSS',
-      description: 'Jump, run and throw game based on object-oriented approach...',
+      description: 'A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.',
       imageUrl: '/assets/img/projects/el_pollo_loco.png',
       liveTestUrl: 'https://live-test-url',
       githubUrl: 'https://github.com/Aristotelis-Stratis',
@@ -35,7 +35,7 @@ export class MyPortfolioComponent {
     {
       title: 'El Pollo Loco',
       stack: 'JavaScript | HTML | CSS',
-      description: 'Jump, run and throw game based on object-oriented approach...',
+      description: 'A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.',
       imageUrl: '/assets/img/projects/el_pollo_loco.png',
       liveTestUrl: 'https://live-test-url',
       githubUrl: 'https://github.com/Aristotelis-Stratis',
@@ -45,7 +45,7 @@ export class MyPortfolioComponent {
     {
       title: 'JOIN',
       stack: 'JavaScript | HTML | CSS',
-      description: 'Jump, run and throw game based on object-oriented approach...',
+      description: 'A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.',
       imageUrl: '/assets/img/projects/el_pollo_loco.png',
       liveTestUrl: 'https://live-test-url',
       githubUrl: 'https://github.com/Aristotelis-Stratis',
