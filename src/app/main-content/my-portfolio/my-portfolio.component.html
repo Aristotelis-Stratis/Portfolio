@@ -1,1 +1,15 @@
-<p>my-portfolio works!</p>
+<section>
+    <div class="portfolioHeader">
+        <div class="headerTitle">
+            <h2>Portfolio</h2>
+        </div>
+        <div class="blueLine"></div>
+        <div class="headerCaption">
+            <p>Explore a selection of my work here - Interact with projects to see my skills in action.</p>
+        </div>
+    </div>
+
+    <div class="myPortfolio">
+        <app-project *ngFor="let project of projects" [project]="project"></app-project>
+    </div>
+</section>

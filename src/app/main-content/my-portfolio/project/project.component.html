@@ -1,0 +1,20 @@
+<div class="project" [ngClass]="{ 'flex-row': project.flexDirection === 'row', 'flex-row-reverse': project.flexDirection === 'row-reverse' }">
+    <div class="projectImage">
+        <img [src]="project.imageUrl" [alt]="project.title">
+    </div>
+    <div class="projectText" [ngClass]="{ 'text-left': project.textAlignment === 'left', 'text-right': project.textAlignment === 'right' }">
+        <div class="projectTitle">
+            <span>{{ project.title }}</span>
+        </div>
+        <div class="projectStack">
+            <span>{{ project.stack }}</span>
+        </div>
+        <div class="projectDescription">
+            <span>{{ project.description }}</span>
+        </div>
+        <div class="projectButtonContainer">
+            <button class="testButton" (click)="goToUrl(project.liveTestUrl)">Live test</button>
+            <button class="githubButton" (click)="goToUrl(project.githubUrl)">Github</button>
+        </div>
+    </div>
+</div>

@@ -9,6 +9,7 @@ section {
     box-sizing: border-box;
     padding-left: 100px;
     padding-bottom: 150px;
+    margin-top: 150px;
     overflow: hidden;
 }
 
@@ -116,12 +117,11 @@ section {
     width: 428.59px;
     height: 951.44px;
     background-image: url('/assets/img/blur-shapes/part_3.png');
-    background-position: 140% 0%;
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
     left: -290px;
-    top: 145px;
+    top: 20px;
     z-index: 1000;
     transform: rotate(31deg);
 }
