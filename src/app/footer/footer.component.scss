@@ -3,6 +3,9 @@ footer {
     box-sizing: border-box;
     padding-top: 50px;
     padding-bottom: 80px;
+    background-color: rgb(21, 28, 47);
+    position: relative;
+    z-index: 1000;
 
     >div {
         display: flex;
@@ -89,7 +92,7 @@ footer {
             align-items: center;
             justify-content: center;
             gap: 30px;
-            padding:0;
+            padding: 0;
         }
     }
 
@@ -97,4 +100,3 @@ footer {
         padding-top: 30px !important;
     }
 }
-

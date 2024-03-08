@@ -1,0 +1,72 @@
+section {
+    padding-top: 100px;
+    padding-bottom: 150px;
+    position: relative;
+    z-index: 999;
+}
+
+.contactHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.blueLine {
+    background-color: rgb(75, 71, 255);
+    width: 50px;
+    border-radius: 2px;
+    height: 4px;
+}
+
+.contactTitle {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    >h2 {
+        font-size: 90px;
+        font-weight: 700;
+    }
+
+}
+
+.contactContent {
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    border: 2px solid red;
+    position: relative;
+    z-index: 1000;
+}
+
+.contactText {
+    width: 40%;
+    height: 100%;
+    border: 2px solid blue;
+}
+
+.contactTextContainer {}
+
+.contactForm {
+    width: 50%;
+    height: 100%;
+    border: 2px solid green;
+}
+
+.contactBackground {
+    background-image: url('/assets/img/blur-shapes/part_7.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: 999;
+    width: 747.47px;
+    height: 902.79px;
+    transform: rotate(320deg);
+    left: -189px;
+    top: 600px;
+}
