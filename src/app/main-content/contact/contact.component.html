@@ -5,24 +5,51 @@
             <h2>Contact</h2>
         </div>
     </div>
-
     <div class="contactContent">
         <div class="contactText">
             <div class="contactTextContainer">
-                <div>
+                <div class="contactTextTitle">
                     <h3>Got a problem to solve?</h3>
                 </div>
-                <div>
+                <div class="contactTextContent">
                     <span>Contact me through this form, I am interested in hearing from you, knowing your ideas and
                         contributing to your projects with my work.</span>
                 </div>
-                <div>
-                    <span>Need a Frontend developer? Contact me!</span>
+                <div class="contactTextContent">
+                    <span>Need a Frontend developer? <b>Contact me!</b></span>
                 </div>
             </div>
         </div>
-        <div class="contactForm">
+        <div class="contactFormContainer">
+            <form class="contactForm">
+                <div class="inputField">
+                    <input class="nameField" type="text" name="name" placeholder="Your name" required>
+                </div>
+                <div class="inputField">
+                    <input class="emailField" type="email" name="email" placeholder="Your email" required>
+                </div>
+                <div class="textField">
+                    <textarea class="messageField" name="message" placeholder="Your message" required></textarea>
+                </div>
+                <div class="formCheckbox">
+                    <div class="checkbox">
+                        <label for="privacy" class="checkBoxLabel">
+                            <input type="checkbox" name="privacy" id="privacy" class="privacyCheckbox" required>
+                        </label>
+                    </div>
+                    <div class="privacyText">
+                        <span> I've read the <a href="">privacy policy</a> and agree to the processing of my data as
+                            outlined.</span>
+                    </div>
+                </div>
+                <div class="formSubmit">
+                    <button type="submit">Send message :)</button>
+                </div>
+            </form>
         </div>
     </div>
     <div class="contactBackground"></div>
+    <div class="goUp">
+        <img src="/assets/img/shapes/arrow_up.png" alt="Go up">
+    </div>
 </section>

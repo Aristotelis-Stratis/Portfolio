@@ -1,8 +1,9 @@
 section {
-    padding-top: 100px;
-    padding-bottom: 150px;
+    padding-top: 50px;
+    padding-bottom: 100px;
     position: relative;
     z-index: 999;
+    overflow: hidden;
 }
 
 .contactHeader {
@@ -30,7 +31,6 @@ section {
         font-size: 90px;
         font-weight: 700;
     }
-
 }
 
 .contactContent {
@@ -39,7 +39,6 @@ section {
     justify-content: space-between;
     padding-left: 100px;
     padding-right: 100px;
-    border: 2px solid red;
     position: relative;
     z-index: 1000;
 }
@@ -47,15 +46,36 @@ section {
 .contactText {
     width: 40%;
     height: 100%;
-    border: 2px solid blue;
 }
 
-.contactTextContainer {}
+.contactTextContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
-.contactForm {
-    width: 50%;
-    height: 100%;
-    border: 2px solid green;
+.contactTextTitle {
+    display: flex;
+    padding-bottom: 20px;
+
+    >h3 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}
+
+.contactTextContent {
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 100%;
+    padding-bottom: 20px;
 }
 
 .contactBackground {
@@ -69,4 +89,251 @@ section {
     transform: rotate(320deg);
     left: -189px;
     top: 600px;
+}
+
+.contactFormContainer {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    .inputField {
+        height: 50px;
+        width: 100%;
+        border-radius: 10px;
+        gap: 10px;
+        text-align: center;
+
+        input,
+        .nameField,
+        .emailField {
+            color: white;
+            font-family: 'Poppins';
+            font-size: 16px;
+            line-height: 19.2px;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px 20px;
+            background-color: rgba(20, 29, 47, 1);
+            border: 1px solid rgba(75, 71, 255, 1);
+            border-radius: 10px;
+
+            &:focus {
+                border-color: #00bee8;
+                outline: none;
+            }
+
+            &::placeholder {
+                color: white;
+                opacity: 1;
+            }
+        }
+    }
+
+    .textField {
+        width: 100%;
+        height: 202px;
+        border-radius: 10px;
+        gap: 10px;
+        text-align: center;
+
+        >.messageField {
+            color: white;
+            font-family: 'Poppins';
+            font-size: 16px;
+            line-height: 19.2px;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            padding: 10px 20px;
+            background-color: rgba(20, 29, 47, 1);
+            border: 1px solid rgba(75, 71, 255, 1);
+            border-radius: 10px;
+
+            &:focus {
+                border-color: #00bee8;
+                outline: none;
+            }
+
+            &::placeholder {
+                color: white;
+                opacity: 1;
+            }
+        }
+    }
+
+    .formSubmit {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        >button {
+            width: 253px;
+            height: 58px;
+            background-color: rgba(182, 182, 182, 1);
+            box-shadow: 4px 4px 4px #00000040;
+            border-radius: 10px;
+            border: none;
+            color: #fff;
+            font-weight: 400;
+            font-size: 23px;
+            transform: scale(1);
+            transition: .2s ease-in-out;
+            opacity: .7;
+            cursor: not-allowed;
+        }
+    }
+}
+
+.formCheckbox {
+    width: 100%;
+    display: flex;
+    position: relative;
+
+    >label {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.8px;
+        letter-spacing: 0em;
+        text-align: left;
+        position: relative;
+        width: 100%;
+        cursor: pointer;
+    }
+}
+
+.checkBoxLabel {
+    width: 100%;
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+
+    >input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 32px;
+        width: 32px;
+        cursor: pointer;
+    }
+}
+
+.privacyText {
+    display: flex;
+    align-items: center;
+
+    >span {
+        >a {
+            color: rgba(75, 71, 255, 1);
+            text-decoration: none;
+
+            &:visited {
+                color: rgba(75, 71, 255, 1);
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.privacyCheckbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    background: url('/assets/img/checkbox/checkbox_unchecked.png') no-repeat right 10px top 5px;
+    background-position: center;
+}
+
+.privacyCheckbox:checked {
+    background: url('/assets/img/checkbox/checkbox_checked.png') no-repeat right 10px top 5px;
+    background-position: center;
+}
+
+.goUp {
+    display: flex;
+    position: absolute;
+    z-index: 1000;
+    right: 100px;
+    bottom: 35px;
+    border: 2px solid;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+
+    &:hover {
+        filter: brightness(0) saturate(100%) invert(47%) sepia(81%) saturate(1427%) hue-rotate(155deg) brightness(104%) contrast(101%);
+    }
+}
+
+
+@media (max-width: 841px) {
+    .contactHeader {
+        gap: 8px;
+    }
+
+    .contactTitle {
+        >h2 {
+            font-size: 66px;
+        }
+    }
+
+    .contactContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: unset;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .contactText {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .contactFormContainer {
+        width: 100%;
+    }
+
+    .formSubmit {
+        >button {
+            width: 195px !important;
+            height: 49px !important;
+            font-size: 16px !important;
+        }
+    }
+
+    .contactBackground {
+        left: -300px;
+        top: 777px;
+    }
+
+    .goUp {
+        right: 25px;
+    }
+}
+
+@media (max-width: 425px) {
+    .contactTitle h2 {
+        font-size: 45px;
+    }
+
+    .contactTextTitle h3 {
+        font-size: 23px;
+    }
+
+    .privacyText {
+        font-size: 14px;
+    }
+
+    .contactBackground {
+        top: 850px;
+    }
 }

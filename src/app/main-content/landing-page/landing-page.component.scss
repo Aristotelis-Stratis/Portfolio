@@ -101,7 +101,6 @@
 }
 
 .landingPageBackground {
-    /* border: 2px solid red; */
     height: 970px;
     width: 100%;
     background-image: url('/assets/img/fold.png');
@@ -115,7 +114,6 @@
 }
 
 .socials {
-    // border: 2px solid yellow;
     display: flex;
     position: relative;
     align-items: center;
@@ -175,18 +173,6 @@
     bottom: 100px;
     gap: 5px;
 }
-
-@media (max-width: 3000px) {
-    // .lpText {
-    //     align-items: start;
-    // }
-
-    // .myNameContainer {
-    //     justify-content: start;
-    // }
-}
-
-@media (max-width: 2000px) {}
 
 @media (max-width: 1350px) {
 
@@ -268,6 +254,12 @@
     }
 }
 
+@media (max-width: 900px) {
+    .scroll-down {
+        display: none;
+    }
+}
+
 @media (max-width: 841px) {
     section {
         margin-top: 109px;
@@ -303,11 +295,9 @@
     .landingPageBackground {
         top: 285px;
         height: 450px;
-        // border: 2px solid red;
     }
 
     .lpText {
-        // border: 2px solid red;
         height: unset;
         width: 100%;
     }

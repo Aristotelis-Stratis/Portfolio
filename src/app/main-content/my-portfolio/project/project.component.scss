@@ -1,5 +1,4 @@
 .project {
-    // border: 2px solid green;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,7 +30,6 @@
 .projectImage {
     width: 550px;
     height: 100%;
-    // border: 2px solid teal;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,7 +42,6 @@
 .projectText {
     height: 100%;
     width: 500px;
-    // border: 2px solid red;
     box-sizing: border-box;
     padding-top: 65px;
     display: flex;
@@ -131,7 +128,6 @@
     >.project {
         flex-direction: row-reverse;
     }
-
 }
 
 @media(max-width:1241px) {
