@@ -177,7 +177,6 @@ section {
         >button {
             width: 253px;
             height: 58px;
-            background-color: rgba(182, 182, 182, 1);
             box-shadow: 4px 4px 4px #00000040;
             border-radius: 10px;
             border: none;
@@ -187,7 +186,12 @@ section {
             transform: scale(1);
             transition: .2s ease-in-out;
             opacity: .7;
-            cursor: not-allowed;
+            cursor: pointer;
+
+            &:disabled {
+                background-color: rgba(182, 182, 182, 1);
+                cursor: not-allowed;
+            }
         }
     }
 }
