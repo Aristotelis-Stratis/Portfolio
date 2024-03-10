@@ -109,11 +109,11 @@
 }
 
 .testButton {
-
     width: 152px;
     height: 58px;
     border: none;
     background-color: rgba(75, 71, 255, 1);
+    transition: background-color 125ms ease;
 }
 
 .githubButton {
@@ -122,6 +122,7 @@
     height: 58px;
     border: 1px solid rgba(0, 190, 232, 1);
     background-color: rgba(20, 29, 47, 1);
+    transition: background-color 125ms ease;
 }
 
 .reverse {
@@ -155,7 +156,6 @@
     .flexRow,
     .flexRowReverse {
         flex-direction: column;
-
     }
 
     .textLeft,
@@ -171,6 +171,7 @@
 
     .projectImage {
         width: unset;
+
         >img {
             width: 350px;
         }

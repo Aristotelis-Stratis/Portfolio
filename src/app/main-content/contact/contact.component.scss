@@ -133,6 +133,7 @@ section {
                 color: white;
                 opacity: 1;
             }
+            
         }
     }
 
@@ -142,6 +143,7 @@ section {
         border-radius: 10px;
         gap: 10px;
         text-align: center;
+        padding-bottom: 25px;
 
         >.messageField {
             color: white;
@@ -155,9 +157,10 @@ section {
             background-color: rgba(20, 29, 47, 1);
             border: 1px solid rgba(75, 71, 255, 1);
             border-radius: 10px;
+            resize: none;
 
             &:focus {
-                border-color: #00bee8;
+                border-color: rgb(0, 190, 232);
                 outline: none;
             }
 
@@ -175,6 +178,7 @@ section {
         justify-content: center;
 
         >button {
+            background-color: #00bee8;
             width: 253px;
             height: 58px;
             box-shadow: 4px 4px 4px #00000040;
@@ -188,12 +192,31 @@ section {
             opacity: .7;
             cursor: pointer;
 
+            // &:disabled {
+            //     background-color: rgba(182, 182, 182, 1);
+            //     cursor: not-allowed;
+            // }
             &:disabled {
-                background-color: rgba(182, 182, 182, 1);
+                background-color: #ccc; // Farbe für den deaktivierten Zustand
+                color: #666;
                 cursor: not-allowed;
+            }
+
+            &:not(:disabled) {
+                background-color: #007bff; // Farbe für den aktivierten Zustand
+                color: #fff;
+                opacity: 1;
+                cursor: pointer;
             }
         }
     }
+}
+
+.validMsg {
+    display: flex;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    color: red;
 }
 
 .formCheckbox {
@@ -270,6 +293,10 @@ section {
     border-radius: 50%;
     padding: 5px;
     cursor: pointer;
+
+    >a {
+        display: flex;
+    }
 
     &:hover {
         filter: brightness(0) saturate(100%) invert(47%) sepia(81%) saturate(1427%) hue-rotate(155deg) brightness(104%) contrast(101%);

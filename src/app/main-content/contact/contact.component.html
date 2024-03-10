@@ -21,17 +21,26 @@
             </div>
         </div>
         <div class="contactFormContainer">
-            <form class="contactForm">
+            <form class="contactForm" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                 <div class="inputField">
-                    <input class="nameField" type="text" name="name" placeholder="Your name" required>
+                    <input #name="ngModel"[(ngModel)]="contactData.name" minlength="3" class="nameField" type="text" name="name" placeholder="Your name" required>
+                    @if (!name.valid && name.touched){
+                        <span class="validMsg">Please enter your name.</span>
+                    }
                 </div>
                 <div class="inputField">
-                    <input class="emailField" type="email" name="email" placeholder="Your email" required>
+                    <input #email="ngModel"[(ngModel)]="contactData.email" class="emailField" type="email" name="email" placeholder="Your email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                    @if (!email.valid && email.touched){
+                        <span class="validMsg">Please enter a valid Email</span>
+                    }
                 </div>
                 <div class="textField">
-                    <textarea class="messageField" name="message" placeholder="Your message" required></textarea>
+                    <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="5" class="messageField" name="message" placeholder="Your message" required></textarea>
+                    @if (!message.valid && message.touched){
+                        <span class="validMsg">Please enter a message</span>
+                    }
                 </div>
-                <div class="formCheckbox">
+                <!-- <div class="formCheckbox">
                     <div class="checkbox">
                         <label for="privacy" class="checkBoxLabel">
                             <input type="checkbox" name="privacy" id="privacy" class="privacyCheckbox" required>
@@ -41,15 +50,15 @@
                         <span> I've read the <a href="">privacy policy</a> and agree to the processing of my data as
                             outlined.</span>
                     </div>
-                </div>
+                </div> -->
                 <div class="formSubmit">
-                    <button type="submit" disabled>Send message :)</button>
+                    <button type="submit" [disabled]="!contactForm.valid">Send message :)</button>
                 </div>
             </form>
         </div>
     </div>
     <div class="contactBackground"></div>
     <div class="goUp">
-        <img src="/assets/img/shapes/arrow_up.png" alt="Go up">
+        <a href="#header"><img src="/assets/img/shapes/arrow_up.png" alt="Go up"></a>
     </div>
 </section>
