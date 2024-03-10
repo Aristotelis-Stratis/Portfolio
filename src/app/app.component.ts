@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ImprintComponent } from './imprint/imprint.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import { LandingPageComponent } from './main-content/landing-page/landing-page.component';
+import  Aos from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -14,10 +15,14 @@ import { LandingPageComponent } from './main-content/landing-page/landing-page.c
     CommonModule,
     MainContentComponent,
     ImprintComponent,
-    FooterComponent,],
+    FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+
+export class AppComponent implements OnInit {
   title = 'Aristotelis Stratis Frontend Developer';
+  ngOnInit() {
+    Aos.init();
+  }
 }
