@@ -103,6 +103,18 @@
     right: 0;
 }
 
+@media (min-width:2160px) {
+    .desktopNav {
+        padding-right: 0;
+    }
+
+    .logo {
+        >a {
+            padding-left: 0;
+        }
+    }
+}
+
 @media (max-width: 841px) {
     .nav {
         position: fixed;

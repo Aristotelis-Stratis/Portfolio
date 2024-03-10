@@ -132,7 +132,7 @@ section {
                 color: white;
                 opacity: 1;
             }
-            
+
         }
     }
 
@@ -302,6 +302,25 @@ section {
     }
 }
 
+@media (min-width: 2160px) {
+
+    .contactContent,
+    .contactHeader {
+        width: 60%;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .goUp {
+        right: 20%;
+    }
+
+    .blueLine {
+        width: 19%;
+        position: absolute;
+        left: 0;
+    }
+}
 
 @media (max-width: 841px) {
     .contactHeader {

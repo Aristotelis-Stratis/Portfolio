@@ -94,6 +94,19 @@ section {
     padding-bottom: 20px;
 }
 
+@media(min-width: 2160px) {
+    section {
+        width: 100%;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .blueLine {
+        width: 20%;
+        position: absolute;
+        right: 0;
+    }
+}
 
 @media (max-width: 1400px) {
     .aboutText {
