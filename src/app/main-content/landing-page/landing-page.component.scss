@@ -115,7 +115,8 @@
 
 .socials {
     display: flex;
-    position: relative;
+    position: absolute;
+    bottom: 100px;
     align-items: center;
     flex-direction: row;
     z-index: 1001;
@@ -182,6 +183,16 @@
 
     .landingPage {
         padding: 0;
+    }
+
+    .socials {
+        width: 100%;
+        left: 0;
+        border: 2px solid;
+    }
+
+    .blueLine {
+        width: 20%;
     }
 
     .scroll-down {
@@ -286,6 +297,8 @@
     }
 
     .socials {
+        position: relative;
+        bottom:unset;
         width: 100%;
         flex-direction: column;
         justify-content: space-around;
