@@ -100,7 +100,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
 
     .inputField {
         height: 50px;
@@ -108,6 +108,11 @@ section {
         border-radius: 10px;
         gap: 10px;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        border: 1px solid rgba(75, 71, 255, 1);
+        background-color: rgba(20, 29, 47, 1);
 
         input,
         .nameField,
@@ -117,10 +122,14 @@ section {
             font-size: 16px;
             line-height: 19.2px;
             width: 100%;
+            height: 100%;
             box-sizing: border-box;
-            padding: 10px 20px;
+            padding-top: 15px;
+            padding-left: 25px;
+            padding-right: 50px;
+            padding-bottom: 15px;
             background-color: rgba(20, 29, 47, 1);
-            border: 1px solid rgba(75, 71, 255, 1);
+            border: none;
             border-radius: 10px;
 
             &:focus {
@@ -136,13 +145,48 @@ section {
         }
     }
 
+    .valid-border {
+        border: 1px solid rgba(112, 230, 28, 1) !important;
+
+        >input {
+            background-image: url('/assets/img/shapes/form_valid.png');
+            background-position: right 20px center;
+            background-repeat: no-repeat;
+        }
+
+        >textarea {
+            background-image: url('/assets/img/shapes/form_valid.png');
+            background-position: right 20px top 15px;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .invalid-border {
+        border: 1px solid rgba(230, 28, 64, 1) !important;
+
+        >input {
+            background-image: url('/assets/img/shapes/form_invalid.png');
+            background-position: right 20px center;
+            background-repeat: no-repeat;
+        }
+
+        >textarea {
+            background-image: url('/assets/img/shapes/form_invalid.png');
+            background-position: right 20px top 15px;
+            background-repeat: no-repeat;
+        }
+    }
+
     .textField {
         width: 100%;
         height: 202px;
         border-radius: 10px;
         gap: 10px;
         text-align: center;
-        padding-bottom: 25px;
+        background-color: rgba(20, 29, 47, 1);
+        border: 1px solid rgba(75, 71, 255, 1);
+        -ms-overflow-style: none;
+        scrollbar-width: none;
 
         >.messageField {
             color: white;
@@ -152,10 +196,13 @@ section {
             width: 100%;
             height: 100%;
             box-sizing: border-box;
-            padding: 10px 20px;
+            padding-top: 15px;
+            padding-left: 25px;
+            padding-right: 50px;
+            padding-bottom: 15px;
             background-color: rgba(20, 29, 47, 1);
-            border: 1px solid rgba(75, 71, 255, 1);
             border-radius: 10px;
+            border: none;
             resize: none;
 
             &:focus {
@@ -168,6 +215,23 @@ section {
                 opacity: 1;
             }
         }
+    }
+
+    textarea::-webkit-scrollbar {
+        width: 15px;
+        background-color: transparent;
+    }
+
+    textarea::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    textarea::-webkit-scrollbar-thumb {
+        background-color: rgb(75, 71, 255);
+        border-radius: 20px;
+        border: 3px solid transparent;
+        background-clip: content-box;
+        cursor: pointer;
     }
 
     .formSubmit {
@@ -214,8 +278,8 @@ section {
 .validMsg {
     display: flex;
     box-sizing: border-box;
-    padding: 5px 10px;
-    color: red;
+    padding: 0px 10px;
+    color: rgba(230, 28, 64, 1)
 }
 
 .formCheckbox {
