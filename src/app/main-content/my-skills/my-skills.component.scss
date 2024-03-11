@@ -9,7 +9,7 @@ section {
     box-sizing: border-box;
     padding-left: 100px;
     padding-bottom: 150px;
-    margin-top: 100px;
+    padding-top: 100px;
     overflow: hidden;
 }
 
@@ -40,6 +40,19 @@ section {
     >img {
         width: 60px;
         height: 60px;
+        transition: transform 0.5s ease;
+        &:hover {
+            animation: jump 0.5s ease infinite;
+        }
+    }
+}
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
     }
 }
 
@@ -132,6 +145,7 @@ section {
         padding-left: 20%;
         padding-right: 20%;
     }
+
     .blueLine {
         width: 20%;
         position: absolute;

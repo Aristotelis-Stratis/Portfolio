@@ -114,6 +114,10 @@ section {
         border: 1px solid rgba(75, 71, 255, 1);
         background-color: rgba(20, 29, 47, 1);
 
+        &:hover {
+            border-color: rgba(28, 230, 182, 1);
+        }
+
         input,
         .nameField,
         .emailField {
@@ -187,6 +191,10 @@ section {
         border: 1px solid rgba(75, 71, 255, 1);
         -ms-overflow-style: none;
         scrollbar-width: none;
+
+        &:hover {
+            border-color: rgba(28, 230, 182, 1);
+        }
 
         >.messageField {
             color: white;
