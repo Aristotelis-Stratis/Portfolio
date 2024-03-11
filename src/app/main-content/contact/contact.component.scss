@@ -255,18 +255,14 @@ section {
             opacity: .7;
             cursor: pointer;
 
-            // &:disabled {
-            //     background-color: rgba(182, 182, 182, 1);
-            //     cursor: not-allowed;
-            // }
             &:disabled {
-                background-color: #ccc; // Farbe für den deaktivierten Zustand
+                background-color: #ccc;
                 color: #666;
                 cursor: not-allowed;
             }
 
             &:not(:disabled) {
-                background-color: #007bff; // Farbe für den aktivierten Zustand
+                background-color: #007bff;
                 color: #fff;
                 opacity: 1;
                 cursor: pointer;
@@ -332,19 +328,19 @@ section {
     }
 }
 
-.privacyCheckbox {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    display: inline-block;
-    background: url('/assets/img/checkbox/checkbox_unchecked.png') no-repeat right 10px top 5px;
-    background-position: center;
-}
+// .privacyCheckbox {
+//     -webkit-appearance: none;
+//     -moz-appearance: none;
+//     appearance: none;
+//     display: inline-block;
+//     background: url('/assets/img/checkbox/checkbox_unchecked.png') no-repeat right 10px top 5px;
+//     background-position: center;
+// }
 
-.privacyCheckbox:checked {
-    background: url('/assets/img/checkbox/checkbox_checked.png') no-repeat right 10px top 5px;
-    background-position: center;
-}
+// .privacyCheckbox:checked {
+//     background: url('/assets/img/checkbox/checkbox_checked.png') no-repeat right 10px top 5px;
+//     background-position: center;
+// }
 
 .goUp {
     display: flex;
