@@ -142,8 +142,10 @@ section {
 
 @media (max-width: 841px) {
     section {
-        margin-top: 150px;
-
+        margin-top: 100px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 75px;
     }
 
     .aboutImage {
@@ -152,11 +154,6 @@ section {
 
     .aboutText {
         width: 100%;
-    }
-
-    section {
-        padding-left: 25px;
-        padding-right: 25px;
     }
 }
 

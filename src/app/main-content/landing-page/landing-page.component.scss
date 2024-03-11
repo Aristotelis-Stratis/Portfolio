@@ -3,8 +3,8 @@
     flex-direction: row;
     width: 100%;
     box-sizing: border-box;
-    padding-left: 47px;
-    padding-right: 47px;
+    padding-left: 100px;
+    padding-right: 100px;
     align-items: center;
     justify-content: center;
 }
@@ -32,7 +32,7 @@
     height: 705px;
     flex-direction: column;
     justify-content: center;
-    z-index: 1001;
+    z-index: 1000;
 }
 
 .myNameContainer {
@@ -121,7 +121,7 @@
     flex-direction: row;
     z-index: 1001;
     height: 40px;
-    margin-top: 170px;
+    width: 100%;
 }
 
 .social-links {
@@ -188,7 +188,6 @@
     .socials {
         width: 100%;
         left: 0;
-        border: 2px solid;
     }
 
     .blueLine {
@@ -205,13 +204,7 @@
     }
 }
 
-@media (max-width: 1350px) {
-
-    .landingPage {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
+@media (max-width: 1480px) {
     .titleOne {
         display: flex;
         align-items: center;
@@ -234,39 +227,23 @@
 
 }
 
-@media (max-width: 1071px) {
+// @media (max-width: 1210px) {
 
-    .titleOne {
-        display: flex;
-        align-items: center;
-    }
+//     .landingPage {
+//         padding-left: 20px;
+//         padding-right: 20px;
+//     }
+// }
 
-    .titleOne span {
-        font-size: 43.5px;
-        padding-top: 0px;
-    }
-
-    .titleTwo span {
-        font-size: 56px;
-        line-height: 60px;
-    }
-
-    .titleThree span {
-        font-size: 46.5px;
-        line-height: 55.5px;
-    }
-
-}
-
-@media (max-width: 999px) {
+@media (max-width: 1210px) {
 
     .myImageContainer img {
         width: 300px;
     }
 
-    .landingPage {
-        padding-left: 24px;
-        padding-right: 24px;
+    .titleOne {
+        display: flex;
+        align-items: center;
     }
 
     .titleOne span {
@@ -285,6 +262,14 @@
     }
 }
 
+@media (max-width: 999px) {
+
+    .landingPage {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
 @media (max-width: 900px) {
     .scroll-down {
         display: none;
@@ -294,14 +279,6 @@
 @media (max-width: 841px) {
     section {
         margin-top: 109px;
-    }
-
-    .socials {
-        position: relative;
-        bottom:unset;
-        width: 100%;
-        flex-direction: column;
-        justify-content: space-around;
     }
 
     .myImageContainer {
@@ -341,6 +318,11 @@
     }
 
     .socials {
+        position: relative;
+        bottom: unset;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
         margin-top: 35px;
     }
 

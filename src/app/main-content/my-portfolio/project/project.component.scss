@@ -41,7 +41,7 @@
 
 .projectText {
     height: 100%;
-    width: 500px;
+    width: 400px;
     box-sizing: border-box;
     padding-top: 65px;
     display: flex;
@@ -86,7 +86,7 @@
     align-items: center;
     flex-direction: row;
     justify-content: start;
-    gap: 80px;
+    gap: 32px;
     margin-top: 25px;
 
     >button {
@@ -141,12 +141,12 @@
     }
 
     .projectText {
-        width: 400px;
+        width: 350px;
     }
 
     .projectImage {
         >img {
-            width: 450px;
+            width: 400px;
         }
     }
 }
