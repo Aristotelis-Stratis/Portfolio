@@ -26,19 +26,20 @@
                 <div class="inputField"
                     [ngClass]="{'valid-border': name.valid && (name.dirty || name.touched), 'invalid-border': name.invalid && (name.dirty || name.touched)}">
                     <input #name="ngModel" [(ngModel)]="contactData.name" minlength="3" class="nameField" type="text"
-                        name="name" placeholder="Your name" required>
+                        autocomplete="name" name="name" placeholder="Your name" required>
                     <span class="validMsg" *ngIf="name.invalid && name.touched">Please enter your name.</span>
                 </div>
                 <div class="inputField"
                     [ngClass]="{'valid-border': email.valid && (email.dirty || email.touched), 'invalid-border': email.invalid && (email.dirty || email.touched)}">
-                    <input #email="ngModel" [(ngModel)]="contactData.email" class="emailField" type="email" name="email"
-                        placeholder="Your email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                    <input #email="ngModel" [(ngModel)]="contactData.email" class="emailField" type="email"
+                        autocomplete="name" name="email" placeholder="Your email" required
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
                     <span class="validMsg" *ngIf="email.invalid && email.touched">Please enter a valid Email</span>
                 </div>
                 <div class="textField"
                     [ngClass]="{'valid-border': message.valid && (message.dirty || message.touched), 'invalid-border': message.invalid && (message.dirty || message.touched)}">
-                    <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="5" class="messageField"
-                        name="message" placeholder="Your message" required></textarea>
+                    <textarea #message="ngModel" [(ngModel)]="contactData.message" autocomplete="off" minlength="4"
+                        class="messageField" name="message" placeholder="Your message" required></textarea>
                     <span class="validMsg" *ngIf="message.invalid && message.touched">Please enter a message.</span>
                 </div>
                 <div class="formSubmit">
@@ -51,20 +52,7 @@
     <div class="contactBackground"></div>
     <div class="">
         <div class="goUp">
-            <a href="#header"><img src="/assets/img/shapes/arrow_up.png" alt="Go up"></a>
+            <a href="#top"><img src="/assets/img/shapes/arrow_up.png" alt="Go up"></a>
         </div>
     </div>
 </section>
-
-
-<!-- <div class="formCheckbox">
-    <div class="checkbox">
-        <label for="privacy" class="checkBoxLabel">
-            <input type="checkbox" name="privacy" id="privacy" class="privacyCheckbox" required>
-        </label>
-    </div>
-    <div class="privacyText">
-        <span> I've read the <a href="">privacy policy</a> and agree to the processing of my data as
-            outlined.</span>
-    </div>
-</div> -->

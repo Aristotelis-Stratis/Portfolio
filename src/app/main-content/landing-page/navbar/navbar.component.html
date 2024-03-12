@@ -1,14 +1,12 @@
-<div class="nav" id="header">
+<div class="nav">
     <div class="logo">
         <a href="/"><span>Aristotelis</span></a>
     </div>
-    <!-- links bearbeiten -->
     <div class="desktopNav">
-        <a href="/">About me</a>
-        <a href="/">Skills</a>
-        <a href="/">Portfolio</a>
+        <a href="#aboutMe">About me</a>
+        <a href="#mySkills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
     </div>
-
     <div class="mobileMenu" (click)="toggleMenu()">
         <img *ngIf="!isMenuOpen && transitionState !== 'open'" src="/assets/img/burger-menu/burger.png" alt="Open Menu">
         <img *ngIf="transitionState === 'open'" src="/assets/img/burger-menu/burger_transition.png" alt="Opening Menu">
@@ -16,9 +14,9 @@
         <img *ngIf="transitionState === 'close'" src="/assets/img/burger-menu/close_transition.png" alt="Closing Menu">
     </div>
     <div class="mobileNav" [class.open]="isMenuOpen">
-        <a href="/">About me</a>
-        <a href="/">My skills</a>
-        <a href="/">Portfolio</a>
-        <a href="/">Contact</a>
+        <div><a href="#aboutMe" (click)="closeMenu()">About me</a></div>
+        <div><a href="#mySkills" (click)="closeMenu()">My skills</a></div>
+        <div><a href="#portfolio" (click)="closeMenu()">Portfolio</a></div>
+        <div><a href="#contact" (click)="closeMenu()">Contact</a></div>
     </div>
 </div>

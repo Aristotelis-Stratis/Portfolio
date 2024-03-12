@@ -1,11 +1,11 @@
 section {
-    margin-top: 100px;
     display: flex;
     position: relative;
     z-index: 999;
     flex-direction: column;
     box-sizing: border-box;
-    padding-top: 0px;
+    padding-top: 120px;
+    padding-bottom: 100px;
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -42,7 +42,7 @@ section {
     background-color: rgb(75, 71, 255);
     height: 4px;
     position: absolute;
-    top: 53px;
+    top: 173px;
     right: 0;
     width: 80%;
     z-index: 999;
@@ -56,8 +56,11 @@ section {
 }
 
 .myPortfolio {
+    display: flex;
+    flex-direction: column;
     z-index: 1000;
     width: 100%;
+    padding-top: 40px;
 }
 
 .portfolioFirstBackground {
@@ -97,11 +100,21 @@ section {
 
 @media(max-width:1241px) {
     section {
-        padding: 0px 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .myPortfolio {
+        gap: 100px;
     }
 
     .portfolioFirstBackground {
         left: -150px;
+    }
+
+    .headerTitle {
+        padding-left: 25px;
+        padding-right: 25px;
     }
 }
 
@@ -109,12 +122,10 @@ section {
     section {
         padding-left: 25px;
         padding-right: 25px;
+        margin-top: 0;
     }
 
     .headerTitle {
-        padding-left: 25px;
-        padding-right: 25px;
-
         >h2 {
             font-size: 66px;
         }
@@ -153,9 +164,6 @@ section {
 }
 
 @media(max-width:425px) {
-    section {
-        padding: 0;
-    }
 
     .headerTitle {
         padding-left: 8px;
@@ -165,4 +173,11 @@ section {
             font-size: 45px;
         }
     }
+
+    .headerCaption {
+        p {
+            width: 280px;
+        }
+    }
+
 }

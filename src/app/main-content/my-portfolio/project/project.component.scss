@@ -2,8 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
     gap: 100px;
     position: relative;
     z-index: 1000;
@@ -170,7 +168,8 @@
     }
 
     .projectImage {
-        width: unset;
+        width: 280px;
+        height: 280px;
 
         >img {
             width: 350px;
@@ -214,11 +213,12 @@
 
     .projectImage {
         >img {
-            width: 300px;
+            width: 280px;
+            height: 280px;
         }
     }
 
     .projectText {
-        width: 300px;
+        width: 280px;
     }
 }

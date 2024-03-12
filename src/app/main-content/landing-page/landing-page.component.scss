@@ -3,6 +3,7 @@
     flex-direction: row;
     width: 100%;
     box-sizing: border-box;
+    padding-top: 109.03px;
     padding-left: 100px;
     padding-right: 100px;
     align-items: center;
@@ -116,7 +117,7 @@
 .socials {
     display: flex;
     position: relative;
-    top: 120px;
+    top: 100px;
     align-items: center;
     flex-direction: row;
     z-index: 1001;
@@ -171,7 +172,7 @@
     z-index: 1001;
     right: 100px;
     height: 160px;
-    bottom: 150px;
+    bottom: 125px;
     gap: 5px;
 }
 

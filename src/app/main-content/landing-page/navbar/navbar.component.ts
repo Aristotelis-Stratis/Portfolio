@@ -27,4 +27,14 @@ export class NavbarComponent {
       }, 100);
     }
   }
+
+  closeMenu(): void {
+    if (this.isMenuOpen) {
+      this.transitionState = 'close';
+      setTimeout(() => {
+        this.isMenuOpen = false;
+        this.transitionState = null;
+      }, 100);
+    }
+  }
 }

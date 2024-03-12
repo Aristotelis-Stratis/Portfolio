@@ -23,7 +23,7 @@ export class MyPortfolioComponent {
       textAlignment: 'left'
     },
     {
-      title: 'JOIN',
+      title: 'JOIN (PH)',
       stack: 'JavaScript | HTML | CSS',
       description: 'Enhance productivity with a Kanban-inspired task manager. Easily create tasks, drag and drop to organize, assign users, and categorize for streamlined project tracking.',
       imageUrl: '/assets/img/projects/JOIN.png',
@@ -33,7 +33,7 @@ export class MyPortfolioComponent {
       textAlignment: 'right'
     },
     {
-      title: 'Simple CRM',
+      title: 'Simple CRM (PH)',
       stack: 'Angular | Firebase',
       description: 'A very Simple Customer Relationship Management system working with CRUD functionality',
       imageUrl: '/assets/img/projects/simple_CRM.png',

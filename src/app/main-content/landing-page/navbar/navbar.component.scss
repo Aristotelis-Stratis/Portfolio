@@ -5,6 +5,10 @@
     justify-content: space-between;
     align-items: center;
     color: rgb(255, 255, 255);
+    background-color: rgba(20, 29, 47, 1);
+    position: fixed;
+    top: 0;
+    z-index: 2001;
 }
 
 .logo {
@@ -90,12 +94,19 @@
     z-index: 2000;
     transition: right 0.2s ease;
 
-    >a {
-        color: white;
-        font-size: 23px;
-        text-decoration: none;
+    >div {
         display: flex;
-        padding: 15px 20px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        >a {
+            color: white;
+            font-size: 23px;
+            text-decoration: none;
+            width: 113px;
+            padding: 15px 20px;
+            text-align: left;
+        }
     }
 }
 
