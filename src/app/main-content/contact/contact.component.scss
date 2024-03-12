@@ -44,7 +44,7 @@ section {
 }
 
 .contactText {
-    width: 40%;
+    width: 45%;
     height: 100%;
 }
 
@@ -337,20 +337,6 @@ section {
     }
 }
 
-// .privacyCheckbox {
-//     -webkit-appearance: none;
-//     -moz-appearance: none;
-//     appearance: none;
-//     display: inline-block;
-//     background: url('/assets/img/checkbox/checkbox_unchecked.png') no-repeat right 10px top 5px;
-//     background-position: center;
-// }
-
-// .privacyCheckbox:checked {
-//     background: url('/assets/img/checkbox/checkbox_checked.png') no-repeat right 10px top 5px;
-//     background-position: center;
-// }
-
 .goUp {
     display: flex;
     position: absolute;
@@ -402,13 +388,17 @@ section {
         }
     }
 
+    .blueLine {
+        width: 75px;
+    }
+
     .contactContent {
         display: flex;
         flex-direction: column;
         align-items: center;
         height: unset;
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 75px;
+        padding-right: 75px;
     }
 
     .contactText {
@@ -447,7 +437,16 @@ section {
         font-size: 23px;
     }
 
+    .blueLine {
+        width: 45px;
+    }
+
     .privacyText {
         font-size: 14px;
+    }
+
+    .contactContent {
+        padding-left: 45px;
+        padding-right: 45px;
     }
 }
