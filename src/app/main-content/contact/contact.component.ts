@@ -18,13 +18,12 @@ export class ContactComponent {
     name: '',
     email: '',
     message: '',
-    privacy: false
   }
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://aristotelis-stratis.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
