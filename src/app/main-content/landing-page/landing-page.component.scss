@@ -24,6 +24,12 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    >img {
+        width: 500px;
+        height: 700px;
+        object-fit: cover;
+    }
 }
 
 .lpImage {
