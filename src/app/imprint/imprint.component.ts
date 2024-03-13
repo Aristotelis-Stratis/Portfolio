@@ -10,4 +10,7 @@ import { NavbarComponent } from '../main-content/landing-page/navbar/navbar.comp
 })
 export class ImprintComponent {
 
+  ngOnInit(): void {
+    window.scrollTo(0, 0)
+  }
 }

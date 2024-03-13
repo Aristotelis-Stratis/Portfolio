@@ -4,11 +4,24 @@ section {
     height: 100vh;
     box-sizing: border-box;
     padding: 50px 100px;
+    z-index: 1000;
 }
 
 h1 {
     font-size: 90px;
     margin-block-end: 40px;
+}
+
+.landingPageBackground {
+    height: 970px;
+    width: 100%;
+    background-image: url('/assets/img/fold.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 150px;
+    display: flex;
+    z-index: 999;
 }
 
 @media (max-width: 1110px) {
@@ -37,6 +50,11 @@ p {
 
     h1 {
         font-size: 66px;
+    }
+
+    .landingPageBackground {
+        top: 285px;
+        height: 450px;
     }
 }
 
