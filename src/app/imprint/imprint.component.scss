@@ -1,0 +1,53 @@
+section {
+    position: relative;
+    top: 109px;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 50px 100px;
+}
+
+h1 {
+    font-size: 90px;
+    margin-block-end: 40px;
+}
+
+@media (max-width: 1110px) {
+    h1 {
+        font-size: 66px;
+    }
+}
+
+
+h2,
+h3 {
+    margin-block-start: 20px;
+}
+
+p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+@media(max-width: 841px) {
+
+    section {
+        padding: 50px 30px;
+    }
+
+    h1 {
+        font-size: 66px;
+    }
+}
+
+
+
+@media (max-width: 425px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
