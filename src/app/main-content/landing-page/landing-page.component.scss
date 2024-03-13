@@ -176,13 +176,13 @@ section {
     z-index: 1001;
     right: 100px;
     height: 160px;
-    bottom: 125px;
+    top: 665px;
     gap: 5px;
 }
 
 @media(min-width: 2160px) {
     section {
-        
+
         padding-left: 20%;
         padding-right: 20%;
     }
@@ -284,7 +284,7 @@ section {
 
 @media (max-width: 841px) {
     section {
-        margin-top: 109px;
+        padding-top: 109px;
     }
 
     .myImageContainer {

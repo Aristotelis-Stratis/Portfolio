@@ -37,4 +37,8 @@ export class NavbarComponent {
       }, 100);
     }
   }
+
+  scrollToTop() {
+    window.scrollTo(0, 0)
+  }
 }

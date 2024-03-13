@@ -9,5 +9,7 @@ import { RouterModule } from '@angular/router';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-
+  scrollToTop() {
+    window.scrollTo(0, 0)
+  }
 }
