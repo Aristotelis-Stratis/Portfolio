@@ -18,7 +18,7 @@ export class MyPortfolioComponent {
       description: 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and bottles to fight against the chicken attacking the village.',
       imageUrl: '/assets/img/projects/el_pollo_loco.png',
       liveTestUrl: 'https://live-test-url',
-      githubUrl: 'https://github.com/Aristotelis-Stratis',
+      githubUrl: 'https://github.com/Aristotelis-Stratis/El-Pollo-Loco',
       flexDirection: 'row',
       textAlignment: 'left'
     },
