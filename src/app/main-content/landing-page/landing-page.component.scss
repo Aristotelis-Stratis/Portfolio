@@ -225,6 +225,12 @@ section {
     }
 }
 
+@media (max-width: 1700px) {
+    .landingPageBackground {
+        top: 300px;
+    }
+}
+
 @media (max-width: 1480px) {
     .titleOne {
         display: flex;
