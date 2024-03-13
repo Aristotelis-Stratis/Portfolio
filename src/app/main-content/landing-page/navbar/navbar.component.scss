@@ -99,6 +99,7 @@
         width: 100%;
         align-items: center;
         justify-content: center;
+
         >a {
             color: white;
             font-size: 23px;
@@ -115,6 +116,11 @@
 }
 
 @media (min-width:2160px) {
+    .nav {
+        left: 0;
+        justify-content: space-around;
+    }
+
     .desktopNav {
         padding-right: 0;
     }
