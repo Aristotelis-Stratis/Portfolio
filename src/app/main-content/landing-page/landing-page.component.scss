@@ -15,10 +15,10 @@ section {
 }
 
 .myImageContainer {
-    background-image: url('/assets/img/blur-shapes/part_1.png');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    // background-image: url('/assets/img/blur-shapes/part_1.png');
+    // background-position: center;
+    // background-size: contain;
+    // background-repeat: no-repeat;
     width: 125%;
 
     >img {
@@ -124,7 +124,6 @@ section {
 .socials {
     display: flex;
     position: relative;
-    top: 100px;
     align-items: center;
     flex-direction: row;
     z-index: 1001;
@@ -257,6 +256,10 @@ section {
         font-size: 49px;
         line-height: 55.5px;
     }
+
+    .landingPageBackground {
+        top: 182px;
+    }
 }
 
 @media (max-width: 1240px) {
@@ -337,7 +340,7 @@ section {
         >img {
             height: 100%;
             width: unset;
-            top: unset;
+            top: -17px;
         }
     }
 
@@ -428,7 +431,17 @@ section {
 
 }
 
+@media (max-width: 700px) {
+    .landingPageBackground {
+        top: 320px;
+    }
+}
+
 @media (max-width: 535px) {
+    .landingPageBackground {
+        top: 330px;
+    }
+
     .titleOne span {
         font-size: 25.5px;
         padding-top: 5px;
