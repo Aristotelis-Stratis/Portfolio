@@ -44,6 +44,9 @@
                 </div>
                 <div class="formSubmit">
                     <button type="submit" [disabled]="!contactForm.valid">Send message :)</button>
+                    <div *ngIf="messageSent" class="messageSentConfirmation">
+                        Die Nachricht wurde erfolgreich versendet!
+                    </div>
                 </div>
             </form>
         </div>
