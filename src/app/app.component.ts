@@ -21,7 +21,7 @@ import  Aos from 'aos';
 })
 
 export class AppComponent implements OnInit {
-  title = 'Aristotelis Stratis Frontend Developer';
+  title = 'Aristotelis Stratis';
   ngOnInit() {
     Aos.init();
   }
