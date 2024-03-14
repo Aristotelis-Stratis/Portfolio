@@ -60,6 +60,7 @@ section {
     flex-direction: column;
     z-index: 1000;
     width: 100%;
+    gap: 100px;
     padding-top: 40px;
 }
 
@@ -102,10 +103,6 @@ section {
     section {
         padding-left: 50px;
         padding-right: 50px;
-    }
-
-    .myPortfolio {
-        gap: 100px;
     }
 
     .portfolioFirstBackground {

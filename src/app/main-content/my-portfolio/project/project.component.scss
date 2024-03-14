@@ -26,14 +26,13 @@
 }
 
 .projectImage {
-    width: 550px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 
     >img {
-        width: 550px;
+        width: 400px;
     }
 }
 
@@ -135,7 +134,7 @@
     }
 
     .project {
-        gap: 0;
+        gap: 25px;
     }
 
     .projectText {
@@ -144,7 +143,7 @@
 
     .projectImage {
         >img {
-            width: 400px;
+            width: 350px;
         }
     }
 }
@@ -168,12 +167,8 @@
     }
 
     .projectImage {
-        width: 280px;
-        height: 280px;
-
-        >img {
-            width: 350px;
-        }
+        width: 350px;
+        height: fit-content;
     }
 
     .projectDescription {
@@ -212,6 +207,7 @@
     }
 
     .projectImage {
+        width: 280px;
         >img {
             width: 280px;
             height: 280px;
