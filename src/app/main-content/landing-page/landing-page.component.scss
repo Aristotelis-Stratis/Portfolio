@@ -111,6 +111,7 @@ section {
 .landingPageBackground {
     height: 970px;
     width: 100%;
+    max-width: 1920px;
     background-image: url('/assets/img/fold.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -123,10 +124,17 @@ section {
 .socials {
     display: flex;
     position: relative;
-    align-items: center;
+    align-items: end;
     flex-direction: row;
     z-index: 1001;
     height: 40px;
+    width: 100%;
+}
+
+.socialsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     width: 100%;
 }
 
@@ -173,21 +181,13 @@ section {
     font-size: 23px;
     font-weight: 400;
     color: white;
-    position: absolute;
     z-index: 1001;
-    right: 100px;
     height: 160px;
-    top: 665px;
     gap: 5px;
+    margin-right: 100px;
 }
 
 @media(min-width: 2160px) {
-    section {
-
-        padding-left: 20%;
-        padding-right: 20%;
-    }
-
     .landingPage {
         padding-top: 109.03px;
         padding-left: 0;
@@ -196,10 +196,7 @@ section {
 
     .socials {
         width: 100%;
-        position: absolute;
-        left: 0;
-        top: unset;
-        bottom: 150px;
+        top: 100px;
     }
 
     .social-links {
@@ -374,6 +371,10 @@ section {
         flex-direction: column;
         justify-content: space-around;
         margin-top: 35px;
+    }
+
+    .socialsContainer {
+        justify-content: center;
     }
 
     .social-links {
