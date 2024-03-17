@@ -1,11 +1,11 @@
 <div class="nav">
   <div class="logo">
-    <a href="#header" (click)="scrollToTop()"><span>Aristotelis</span></a>
+    <a [routerLink]="['/']" (click)="scrollToTop()"><span>Aristotelis</span></a>
   </div>
   <div class="desktopNav">
-    <a href="#aboutMe">{{ "ABOUT_ME" | translate }}</a>
-    <a href="#mySkills">{{ "SKILLS" | translate }}</a>
-    <a href="#portfolio">{{ "PORTFOLIO" | translate }}</a>
+    <a href="#aboutMe">{{ 'HEADER.ABOUT' | translate }}</a>
+    <a href="#mySkills">{{ 'HEADER.SKILLS' | translate }}</a>
+    <a href="#portfolio">{{ 'HEADER.PORTFOLIO' | translate }}</a>
     <span class="translation">
       <span (click)="switchLanguage('en')">EN</span>|
       <span (click)="switchLanguage('de')">DE</span>

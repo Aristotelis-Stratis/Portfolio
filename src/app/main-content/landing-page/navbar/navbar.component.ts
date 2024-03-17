@@ -1,13 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-
+import { RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [RouterModule, CommonModule, TranslateModule],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss'
+  styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent {
   isMenuOpen: boolean = false;
@@ -46,6 +46,6 @@ export class NavbarComponent {
   }
 
   scrollToTop() {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   }
 }

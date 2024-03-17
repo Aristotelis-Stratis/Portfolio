@@ -11,11 +11,9 @@ export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
 
-// Kombiniere die Provider aus appConfig mit den zusätzlichen benötigten Providern
 const combinedProviders = [
-  ...appConfig.providers, // Routing und HttpClient von appConfig
+  ...appConfig.providers,
   importProvidersFrom(
-    // ngx-translate konfigurieren
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -26,7 +24,6 @@ const combinedProviders = [
   )
 ];
 
-// Anwendung mit kombinierten Providern bootstrappen
 bootstrapApplication(AppComponent, {
   providers: combinedProviders
 }).catch(err => console.error(err));

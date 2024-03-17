@@ -4,16 +4,16 @@
     </div>
     <div class="projectText" [ngClass]="{ 'textLeft': project.textAlignment === 'left', 'textRight': project.textAlignment === 'right' }">
         <div class="projectTitle">
-            <span>{{ project.title }}</span>
+            <span>{{ project.title | translate }}</span>
         </div>
         <div class="projectStack">
-            <span>{{ project.stack }}</span>
+            <span>{{ project.stack | translate }}</span>
         </div>
         <div class="projectDescription">
-            <span>{{ project.description }}</span>
+            <span>{{ project.description | translate }}</span>
         </div>
         <div class="projectButtonContainer">
-            <button class="testButton" (click)="goToUrl(project.liveTestUrl)">Live test</button>
+            <button class="testButton" (click)="goToUrl(project.liveTestUrl)">Live Test</button>
             <button class="githubButton" (click)="goToUrl(project.githubUrl)">Github</button>
         </div>
     </div>

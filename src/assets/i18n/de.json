@@ -1,5 +1,73 @@
 {
-    "ABOUT_ME": "Über Mich",
+  "HEADER": {
+    "ABOUT": "Über Mich",
     "SKILLS": "Fähigkeiten",
     "PORTFOLIO": "Portfolio"
+  },
+  "LANDING_PAGE": {
+    "I_AM": "Ich bin",
+    "JOB_TITLE": "Frontend-Entwickler",
+    "CONTACT_ME": "Lass uns reden!",
+    "SCROLL_DOWN": "Scrollen"
+  },
+  "ABOUT_ME": {
+    "TITLE": "Über mich",
+    "INTRO_TEXT": "Hallo! Ich bin Aristotelis Stratis, ein Frontend-Entwickler aus Eckernförde, Deutschland. Meine Reise wird von dem Glauben angetrieben, dass Innovation unser tägliches Leben erheblich verbessern kann. Ich verbinde diese Leidenschaft jetzt mit meinem Beruf, um wirkungsvolle digitale Erlebnisse zu entwickeln.",
+    "HISTORY_TEXT": "Vor etwas mehr als einem Jahr wagte ich den Schritt in die Richtung der Frontend-Entwicklung, um meine Fähigkeiten und beruflichen Horizonte zu erweitern. Die Developer Akademie war entscheidend für diese Transformation und bot unübertroffene Unterstützung und Orientierung, um meine Ziele zu verwirklichen.",
+    "BACKGROUND_TEXT": "Der Übergang von einem kulinarischen Hintergrund, wo ich meine Teamarbeit und Führungsqualitäten entwickelt habe, hat mich dazu gebracht, eine akribische Aufmerksamkeit auf Details und ein Engagement für Exzellenz in die Technikwelt zu bringen, und diese Vermögenswerte direkt in meine Programmierarbeit einzubringen."
+  },
+  "MY_SKILLS": {
+    "TITLE": "Fähigkeiten",
+    "TEXT": "Ich habe mehr als zehn Projekte unter Einsatz diverser Technologien realisiert. Hier sind einige der Fähigkeiten, die ich dabei eingesetzt habe.",
+    "GET_IN_TOUCH": "Kontakt"
+  },
+  "MY_PORTFOLIO": {
+    "TEXT": "Auf dieser Seite finden Sie eine Auswahl meiner Projekte. Sie sind herzlich eingeladen, diese auszuprobieren."
+  },
+  "PROJECTS": {
+    "EL_POLLO_LOCO": {
+      "TITLE": "El Pollo Loco",
+      "STACK": "JavaScript | HTML | CSS",
+      "DESCRIPTION": "Ein einfaches Jump-and-Run-Spiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Flaschen zu finden, um gegen die Hühner zu kämpfen, die das Dorf angreifen."
+    },
+    "JOIN": {
+      "TITLE": "JOIN PLACEHOLDER",
+      "STACK": "JavaScript | HTML | CSS",
+      "DESCRIPTION": "Steigern Sie die Produktivität mit einem von Kanban inspirierten Aufgabenmanager. Erstellen Sie problemlos Aufgaben, ziehen Sie sie zum Organisieren, weisen Sie Benutzer zu und kategorisieren Sie sie für eine effiziente Projektnachverfolgung."
+    },
+    "SIMPLE_CRM": {
+      "TITLE": "SIMPLE CRM PLACEHOLDER",
+      "STACK": "Angular | Firebase | SCSS",
+      "DESCRIPTION": "Ein sehr einfaches Customer-Relationship-Management-System mit CRUD-Funktionalität."
+    }
+  },
+  "CONTACT_SECTION": {
+    "TITLE": "Kontakt",
+    "TEXT": "Gibt es ein Problem zu lösen?",
+    "CONTENT_ONE": "Kontaktieren Sie mich über dieses Formular. Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+    "CONTENT_TWO": "<span>Brauchen Sie einen Frontend-Entwickler?&nbsp;<b>Kontaktieren Sie mich!</b></span>"
+  },
+  "FORM": {
+    "NAME_PLACEHOLDER": "Ihr Name",
+    "EMAIL_PLACEHOLDER": "Ihre E-Mail",
+    "MESSAGE_PLACEHOLDER": "Ihre Nachricht",
+    "NAME_VALIDATION_MESSAGE": "Bitte geben Sie Ihren Namen ein.",
+    "EMAIL_VALIDATION_MESSAGE": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+    "MESSAGE_VALIDATION_MESSAGE": "Bitte geben Sie eine Nachricht ein.",
+    "SEND_MESSAGE": "Absenden :)",
+    "MESSAGE_SENT_CONFIRMATION": "Die Nachricht wurde erfolgreich versendet!"
+  },
+  "FOOTER": {
+    "IMPRINT": "Impressum"
+  },
+ "IMPRINT": {
+    "TITLE": "Impressum",
+    "TMG_INFO": "Angaben gemäß § 5 TMG",
+    "POSTAL_ADDRESS": "Postanschrift",
+    "CONTACT": "Kontakt",
+    "PHONE": "Telefon",
+    "EMAIL": "E-Mail",
+    "WEBSITE_NOTICE": "Hinweis zur Webseite",
+    "IMPRINT_GENERATOR": "Das Impressum wurde mit dem Impressum-Generator von"
   }
+}

@@ -2,7 +2,7 @@
     <div class="contactHeader">
         <div class="blueLine"></div>
         <div class="contactTitle">
-            <h2>Contact</h2>
+            <h2>{{ 'CONTACT_SECTION.TITLE' | translate }}</h2>
         </div>
     </div>
     <div class="contactContent">
@@ -10,15 +10,12 @@
             <div class="contactTextContainer" data-aos="fade-right" data-aos-offset="270" data-aos-easing="ease-in-sine"
                 data-aos-duration="500" data-aos-anchor-placement="top-bottom">
                 <div class="contactTextTitle">
-                    <h3>Got a problem to solve?</h3>
+                    <h3>{{ 'CONTACT_SECTION.TEXT' | translate }}</h3>
                 </div>
                 <div class="contactTextContent">
-                    <span>Contact me through this form, I am interested in hearing from you, knowing your ideas and
-                        contributing to your projects with my work.</span>
+                    <span>{{ 'CONTACT_SECTION.CONTENT_ONE' | translate }}</span>
                 </div>
-                <div class="contactTextContent">
-                    <span>Need a Frontend developer? <b>Contact me!</b></span>
-                </div>
+                <div class="contactTextContent" [innerHTML]="'CONTACT_SECTION.CONTENT_TWO' | translate"></div>
             </div>
         </div>
         <div class="contactFormContainer">
@@ -26,26 +23,26 @@
                 <div class="inputField"
                     [ngClass]="{'valid-border': name.valid && (name.dirty || name.touched), 'invalid-border': name.invalid && (name.dirty || name.touched)}">
                     <input #name="ngModel" [(ngModel)]="contactData.name" minlength="3" class="nameField" type="text"
-                        autocomplete="name" name="name" placeholder="Your name" required>
-                    <span class="validMsg" *ngIf="name.invalid && name.touched">Please enter your name.</span>
+                        autocomplete="name" name="name" placeholder="{{ 'FORM.NAME_PLACEHOLDER' | translate }}" required>
+                    <span class="validMsg" *ngIf="name.invalid && name.touched">{{ 'FORM.NAME_VALIDATION_MESSAGE' | translate }}</span>
                 </div>
                 <div class="inputField"
                     [ngClass]="{'valid-border': email.valid && (email.dirty || email.touched), 'invalid-border': email.invalid && (email.dirty || email.touched)}">
                     <input #email="ngModel" [(ngModel)]="contactData.email" class="emailField" type="email"
-                        autocomplete="name" name="email" placeholder="Your email" required
+                        autocomplete="name" name="email" placeholder="{{ 'FORM.EMAIL_PLACEHOLDER' | translate }}" required
                         pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
-                    <span class="validMsg" *ngIf="email.invalid && email.touched">Please enter a valid Email</span>
+                    <span class="validMsg" *ngIf="email.invalid && email.touched">{{ 'FORM.EMAIL_VALIDATION_MESSAGE' | translate }}</span>
                 </div>
                 <div class="textField"
                     [ngClass]="{'valid-border': message.valid && (message.dirty || message.touched), 'invalid-border': message.invalid && (message.dirty || message.touched)}">
                     <textarea #message="ngModel" [(ngModel)]="contactData.message" autocomplete="off" minlength="4"
-                        class="messageField" name="message" placeholder="Your message" required></textarea>
-                    <span class="validMsg" *ngIf="message.invalid && message.touched">Please enter a message.</span>
+                        class="messageField" name="message" placeholder="{{ 'FORM.MESSAGE_PLACEHOLDER' | translate }}" required></textarea>
+                    <span class="validMsg" *ngIf="message.invalid && message.touched">{{ 'FORM.MESSAGE_VALIDATION_MESSAGE' | translate }}.</span>
                 </div>
                 <div class="formSubmit">
-                    <button type="submit" [disabled]="!contactForm.valid">Send message :)</button>
+                    <button type="submit" [disabled]="!contactForm.valid">{{ 'FORM.SEND_MESSAGE' | translate }}</button>
                     <div *ngIf="messageSent" class="messageSentConfirmation">
-                        Die Nachricht wurde erfolgreich versendet!
+                        {{ 'FORM.MESSAGE_SENT_CONFIRMATION' | translate }}
                     </div>
                 </div>
             </form>
