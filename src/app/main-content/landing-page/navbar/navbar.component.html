@@ -1,22 +1,42 @@
 <div class="nav">
-    <div class="logo">
-        <a href="#header" (click)="scrollToTop()"><span>Aristotelis</span></a>
-    </div>
-    <div class="desktopNav">
-        <a href="#aboutMe">About me</a>
-        <a href="#mySkills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
-    </div>
-    <div class="mobileMenu" (click)="toggleMenu()">
-        <img *ngIf="!isMenuOpen && transitionState !== 'open'" src="/assets/img/burger-menu/burger.png" alt="Open Menu">
-        <img *ngIf="transitionState === 'open'" src="/assets/img/burger-menu/burger_transition.png" alt="Opening Menu">
-        <img *ngIf="isMenuOpen && transitionState !== 'close'" src="/assets/img/burger-menu/close.png" alt="Close Menu">
-        <img *ngIf="transitionState === 'close'" src="/assets/img/burger-menu/close_transition.png" alt="Closing Menu">
-    </div>
-    <div class="mobileNav" [class.open]="isMenuOpen">
-        <div><a href="#aboutMe" (click)="closeMenu()">About me</a></div>
-        <div><a href="#mySkills" (click)="closeMenu()">My skills</a></div>
-        <div><a href="#portfolio" (click)="closeMenu()">Portfolio</a></div>
-        <div><a href="#contact" (click)="closeMenu()">Contact</a></div>
-    </div>
+  <div class="logo">
+    <a href="#header" (click)="scrollToTop()"><span>Aristotelis</span></a>
+  </div>
+  <div class="desktopNav">
+    <a href="#aboutMe">{{ "ABOUT_ME" | translate }}</a>
+    <a href="#mySkills">{{ "SKILLS" | translate }}</a>
+    <a href="#portfolio">{{ "PORTFOLIO" | translate }}</a>
+    <span class="translation">
+      <span (click)="switchLanguage('en')">EN</span>|
+      <span (click)="switchLanguage('de')">DE</span>
+    </span>
+  </div>
+  <div class="mobileMenu" (click)="toggleMenu()">
+    <img
+      *ngIf="!isMenuOpen && transitionState !== 'open'"
+      src="/assets/img/burger-menu/burger.png"
+      alt="Open Menu"
+    />
+    <img
+      *ngIf="transitionState === 'open'"
+      src="/assets/img/burger-menu/burger_transition.png"
+      alt="Opening Menu"
+    />
+    <img
+      *ngIf="isMenuOpen && transitionState !== 'close'"
+      src="/assets/img/burger-menu/close.png"
+      alt="Close Menu"
+    />
+    <img
+      *ngIf="transitionState === 'close'"
+      src="/assets/img/burger-menu/close_transition.png"
+      alt="Closing Menu"
+    />
+  </div>
+  <div class="mobileNav" [class.open]="isMenuOpen">
+    <div><a href="#aboutMe" (click)="closeMenu()">About me</a></div>
+    <div><a href="#mySkills" (click)="closeMenu()">My skills</a></div>
+    <div><a href="#portfolio" (click)="closeMenu()">Portfolio</a></div>
+    <div><a href="#contact" (click)="closeMenu()">Contact</a></div>
+  </div>
 </div>

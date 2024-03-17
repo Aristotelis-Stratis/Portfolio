@@ -1,16 +1,23 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
   isMenuOpen: boolean = false;
   transitionState: 'open' | 'close' | null = null;
+
+  constructor(private translate: TranslateService) {}
+
+  switchLanguage(language: string) {
+    this.translate.use(language);
+  }
 
   toggleMenu(): void {
     if (!this.isMenuOpen) {
