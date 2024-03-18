@@ -88,18 +88,6 @@ footer {
     }
 }
 
-@media(min-width:2160px) {
-    footer {
-        padding-left: 20%;
-        padding-right: 20%;
-
-        >div {
-            padding-left: 0;
-            padding-right: 0;
-        }
-    }
-}
-
 @media (max-width: 841px) {
     footer {
         >div {
