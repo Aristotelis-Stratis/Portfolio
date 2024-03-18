@@ -1,20 +1,22 @@
-<div class="project" [ngClass]="{ 'flexRow': project.flexDirection === 'row', 'flexRowReverse': project.flexDirection === 'row-reverse' }" data-aos="zoom-out" data-aos-offset="270" data-aos-easing="ease-in-sine" data-aos-duration="800">
-    <div class="projectImage">
-        <img [src]="project.imageUrl" [alt]="project.title">
+<section>
+    <div class="project" [ngClass]="{ 'flexRow': project.flexDirection === 'row', 'flexRowReverse': project.flexDirection === 'row-reverse' }" data-aos="zoom-out" data-aos-offset="270" data-aos-easing="ease-in-sine" data-aos-duration="800">
+        <div class="projectImage">
+            <img [src]="project.imageUrl" [alt]="project.title">
+        </div>
+        <div class="projectText" [ngClass]="{ 'textLeft': project.textAlignment === 'left', 'textRight': project.textAlignment === 'right' }">
+            <div class="projectTitle">
+                <span>{{ project.title | translate }}</span>
+            </div>
+            <div class="projectStack">
+                <span>{{ project.stack | translate }}</span>
+            </div>
+            <div class="projectDescription">
+                <span>{{ project.description | translate }}</span>
+            </div>
+            <div class="projectButtonContainer">
+                <button class="testButton" (click)="goToUrl(project.liveTestUrl)">Live Test</button>
+                <button class="githubButton" (click)="goToUrl(project.githubUrl)">Github</button>
+            </div>
+        </div>
     </div>
-    <div class="projectText" [ngClass]="{ 'textLeft': project.textAlignment === 'left', 'textRight': project.textAlignment === 'right' }">
-        <div class="projectTitle">
-            <span>{{ project.title | translate }}</span>
-        </div>
-        <div class="projectStack">
-            <span>{{ project.stack | translate }}</span>
-        </div>
-        <div class="projectDescription">
-            <span>{{ project.description | translate }}</span>
-        </div>
-        <div class="projectButtonContainer">
-            <button class="testButton" (click)="goToUrl(project.liveTestUrl)">Live Test</button>
-            <button class="githubButton" (click)="goToUrl(project.githubUrl)">Github</button>
-        </div>
-    </div>
-</div>
+</section>

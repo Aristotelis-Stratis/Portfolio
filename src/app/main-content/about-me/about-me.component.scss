@@ -1,161 +1,163 @@
 section {
-    display: flex;
-    height: fit-content;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    z-index: 999;
-    box-sizing: border-box;
-    padding-left: 100px;
-    padding-bottom: 100px;
-    padding-top: 200px;
+  display: flex;
+  height: fit-content;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 999;
+  box-sizing: border-box;
+  padding-left: 100px;
+  padding-bottom: 100px;
+  padding-top: 200px;
 }
 
 .aboutText {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    z-index: 1000 !important;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  z-index: 1000 !important;
 
-    >h2 {
-        font-size: 90px;
-    }
+  > h2 {
+    font-size: 90px;
+  }
 }
 
 .aboutImage {
-    height: 100%;
-    width: 50%;
-    z-index: 1000 !important;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    flex-direction: row;
+  height: 100%;
+  width: 50%;
+  z-index: 1000 !important;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: row;
 }
 
 .pictureContainer {
-    z-index: inherit;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  z-index: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .myPicture {
+  width: 453px;
+  height: 453px;
+  background-color: rgba(20, 29, 47, 0.8);
+  background-image: url("/assets/img/portrait/ari_portrait.png");
+  background-size: cover;
+  background-position: 0% 33%;
+  background-repeat: no-repeat;
+  border: 4px solid rgba(0, 190, 232, 1);
+  border-radius: 50%;
+
+  > img {
     width: 453px;
     height: 453px;
-    background-color: rgba(20, 29, 47, 0.8);
-    background-image: url('/assets/img/portrait/ari_portrait.png');
-    background-size: cover;
-    background-position: 0% 33%;
-    background-repeat: no-repeat;
-    border: 4px solid rgba(0, 190, 232, 1);
-    border-radius: 50%;
-
-    >img {
-        width: 453px;
-        height: 453px;
-    }
+  }
 }
 
 .blueLine {
-    height: 4px;
-    width: 30%;
-    background-color: rgba(0, 190, 232, 1)
+  height: 4px;
+  width: 30%;
+  background-color: rgba(0, 190, 232, 1);
 }
 
 .aboutBackground {
-    height: 750px;
-    width: 608px;
-    background-image: url('/assets/img/blur-shapes/part_2.png');
-    background-position: 140% 0%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    right: -400px;
-    bottom: 250px;
-    z-index: 999;
+  height: 750px;
+  width: 608px;
+  background-image: url("/assets/img/blur-shapes/part_2.png");
+  background-position: 140% 0%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: -400px;
+  bottom: 250px;
+  z-index: 999;
 }
 
 .textContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  font-size: 16px;
 }
 
 .imgContainer {
-    box-sizing: border-box;
-    padding-right: 20px;
-    padding-bottom: 20px;
+  box-sizing: border-box;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
 
-
 @media (max-width: 1400px) {
-    .aboutText {
-        width: 452px;
-    }
+  .aboutText {
+    width: 45%;
+  }
 }
 
 @media (max-width: 1110px) {
-    .aboutText {
-        width: 400px;
+  .aboutText {
 
-        >h2 {
-            font-size: 66px;
-        }
+    > h2 {
+      font-size: 66px;
     }
+  }
 
-    .myPicture {
-        width: 350px;
-        height: 350px;
-    }
+  .myPicture {
+    width: 350px;
+    height: 350px;
+  }
 }
 
 @media (max-width: 999px) {
-    .myPicture {
-        width: 340px;
-        height: 340px;
-    }
+  .myPicture {
+    width: 340px;
+    height: 340px;
+  }
 
-    section {
-        padding-left: 50px;
-    }
+  section {
+    padding-left: 50px;
+  }
 }
 
 @media (max-width: 841px) {
-    section {
-        margin-top: 0;
-        padding-top: 120px;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-bottom: 0px;
-    }
+  section {
+    margin-top: 0;
+    padding-top: 120px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 0px;
+  }
 
-    .aboutImage {
-        display: none;
-    }
+  .aboutImage {
+    display: none;
+  }
 
-    .aboutText {
-        width: 100%;
-    }
+  .aboutText {
+    width: 100%;
+  }
 }
 
-@media(max-width:525px){
-    .imgContainer {
-        >img {
-            height: 35px;
-            object-fit: contain;
-        }
-      }
+@media (max-width: 525px) {
+  .imgContainer {
+    > img {
+      height: 35px;
+      object-fit: contain;
+    }
+  }
 }
 
-@media (max-width: 425px) {
-    .aboutText {
-        >h2 {
-            font-size: 45px;
-        }
+@media (max-width: 450px) {
+  section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .aboutText {
+    > h2 {
+      font-size: 45px;
     }
+  }
 }

@@ -1,441 +1,441 @@
 section {
-    padding-top: 120px;
-    padding-bottom: 100px;
-    position: relative;
-    z-index: 999;
-    overflow: hidden;
+  padding-top: 120px;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 999;
+  overflow: hidden;
 }
 
 .contactHeader {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-    gap: 50px;
-    margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 50px;
+  margin-bottom: 50px;
 }
 
 .blueLine {
-    background-color: rgb(75, 71, 255);
-    width: 50px;
-    border-radius: 2px;
-    height: 4px;
+  background-color: rgb(75, 71, 255);
+  width: 50px;
+  border-radius: 2px;
+  height: 4px;
 }
 
 .contactTitle {
-    display: flex;
-    align-items: center;
-    justify-content: start;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 
-    >h2 {
-        font-size: 90px;
-        font-weight: 700;
-    }
+  > h2 {
+    font-size: 90px;
+    font-weight: 700;
+  }
 }
 
 .contactContent {
-    height: 600px;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 100px;
-    padding-right: 100px;
-    position: relative;
-    z-index: 1000;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  position: relative;
+  z-index: 1000;
 }
 
 .contactText {
-    width: 45%;
-    height: 100%;
+  width: 45%;
+  height: 100%;
 }
 
 .contactTextContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .contactTextTitle {
-    display: flex;
-    padding-bottom: 20px;
+  display: flex;
+  padding-bottom: 20px;
 
-    >h3 {
-        font-size: 32px;
-        font-weight: 700;
-        line-height: 38px;
-        letter-spacing: 0em;
-        text-align: left;
-    }
+  > h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
 }
 
 .contactTextContent {
-    display: flex;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-    width: 100%;
-    padding-bottom: 20px;
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 100%;
+  padding-bottom: 20px;
 }
 
 .contactBackground {
-    background-image: url('/assets/img/blur-shapes/part_7.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    z-index: 999;
-    width: 747.47px;
-    height: 902.79px;
-    transform: rotate(320deg);
-    left: -189px;
-    top: 600px;
+  background-image: url("/assets/img/blur-shapes/part_7.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: 999;
+  width: 747.47px;
+  height: 902.79px;
+  transform: rotate(320deg);
+  left: -189px;
+  top: 600px;
 }
 
 .contactFormContainer {
-    display: flex;
-    flex-direction: column;
-    width: 45%;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
 }
 
 .contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+
+  .inputField {
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    gap: 10px;
+    text-align: center;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid rgba(75, 71, 255, 1);
+    background-color: rgba(20, 29, 47, 1);
+
+    &:hover {
+      border-color: rgba(28, 230, 182, 1);
+    }
+
+    input,
+    .nameField,
+    .emailField {
+      color: white;
+      font-family: "Poppins";
+      font-size: 16px;
+      line-height: 19.2px;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      padding-top: 15px;
+      padding-left: 25px;
+      padding-right: 50px;
+      padding-bottom: 15px;
+      background-color: rgba(20, 29, 47, 1);
+      border: none;
+      border-radius: 10px;
+
+      &:focus {
+        border-color: #00bee8;
+        outline: none;
+      }
+
+      &::placeholder {
+        color: white;
+        opacity: 1;
+      }
+    }
+  }
+
+  .valid-border {
+    border: 1px solid rgba(112, 230, 28, 1) !important;
+
+    > input {
+      background-image: url("/assets/img/shapes/form_valid.png");
+      background-position: right 20px center;
+      background-repeat: no-repeat;
+    }
+
+    > textarea {
+      background-image: url("/assets/img/shapes/form_valid.png");
+      background-position: right 20px top 15px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .invalid-border {
+    border: 1px solid rgba(230, 28, 64, 1) !important;
+
+    > input {
+      background-image: url("/assets/img/shapes/form_invalid.png");
+      background-position: right 20px center;
+      background-repeat: no-repeat;
+    }
+
+    > textarea {
+      background-image: url("/assets/img/shapes/form_invalid.png");
+      background-position: right 20px top 15px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .textField {
+    width: 100%;
+    height: 202px;
+    border-radius: 10px;
+    gap: 10px;
+    text-align: center;
+    background-color: rgba(20, 29, 47, 1);
+    border: 1px solid rgba(75, 71, 255, 1);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &:hover {
+      border-color: rgba(28, 230, 182, 1);
+    }
+
+    > .messageField {
+      color: white;
+      font-family: "Poppins";
+      font-size: 16px;
+      line-height: 19.2px;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      padding-top: 15px;
+      padding-left: 25px;
+      padding-right: 50px;
+      padding-bottom: 15px;
+      background-color: rgba(20, 29, 47, 1);
+      border-radius: 10px;
+      border: none;
+      resize: none;
+
+      &:focus {
+        border-color: rgb(0, 190, 232);
+        outline: none;
+      }
+
+      &::placeholder {
+        color: white;
+        opacity: 1;
+      }
+    }
+  }
+
+  textarea::-webkit-scrollbar {
+    width: 15px;
+    background-color: transparent;
+  }
+
+  textarea::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  textarea::-webkit-scrollbar-thumb {
+    background-color: rgb(75, 71, 255);
+    border-radius: 20px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+    cursor: pointer;
+  }
+
+  .formSubmit {
+    width: 100%;
+    display: flex;
     align-items: center;
-    gap: 40px;
+    justify-content: center;
+    flex-direction: column;
 
-    .inputField {
-        height: 50px;
-        width: 100%;
-        border-radius: 10px;
-        gap: 10px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        border-radius: 10px;
-        border: 1px solid rgba(75, 71, 255, 1);
-        background-color: rgba(20, 29, 47, 1);
+    > button {
+      background-color: #00bee8;
+      width: 253px;
+      height: 58px;
+      box-shadow: 4px 4px 4px #00000040;
+      border-radius: 10px;
+      border: none;
+      color: #fff;
+      font-weight: 400;
+      font-size: 23px;
+      transform: scale(1);
+      transition: 0.2s ease-in-out;
+      opacity: 0.7;
+      cursor: pointer;
 
-        &:hover {
-            border-color: rgba(28, 230, 182, 1);
-        }
+      &:disabled {
+        background-color: #ccc;
+        color: #666;
+        cursor: not-allowed;
+      }
 
-        input,
-        .nameField,
-        .emailField {
-            color: white;
-            font-family: 'Poppins';
-            font-size: 16px;
-            line-height: 19.2px;
-            width: 100%;
-            height: 100%;
-            box-sizing: border-box;
-            padding-top: 15px;
-            padding-left: 25px;
-            padding-right: 50px;
-            padding-bottom: 15px;
-            background-color: rgba(20, 29, 47, 1);
-            border: none;
-            border-radius: 10px;
-
-            &:focus {
-                border-color: #00bee8;
-                outline: none;
-            }
-
-            &::placeholder {
-                color: white;
-                opacity: 1;
-            }
-
-        }
-    }
-
-    .valid-border {
-        border: 1px solid rgba(112, 230, 28, 1) !important;
-
-        >input {
-            background-image: url('/assets/img/shapes/form_valid.png');
-            background-position: right 20px center;
-            background-repeat: no-repeat;
-        }
-
-        >textarea {
-            background-image: url('/assets/img/shapes/form_valid.png');
-            background-position: right 20px top 15px;
-            background-repeat: no-repeat;
-        }
-    }
-
-    .invalid-border {
-        border: 1px solid rgba(230, 28, 64, 1) !important;
-
-        >input {
-            background-image: url('/assets/img/shapes/form_invalid.png');
-            background-position: right 20px center;
-            background-repeat: no-repeat;
-        }
-
-        >textarea {
-            background-image: url('/assets/img/shapes/form_invalid.png');
-            background-position: right 20px top 15px;
-            background-repeat: no-repeat;
-        }
-    }
-
-    .textField {
-        width: 100%;
-        height: 202px;
-        border-radius: 10px;
-        gap: 10px;
-        text-align: center;
-        background-color: rgba(20, 29, 47, 1);
-        border: 1px solid rgba(75, 71, 255, 1);
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-
-        &:hover {
-            border-color: rgba(28, 230, 182, 1);
-        }
-
-        >.messageField {
-            color: white;
-            font-family: 'Poppins';
-            font-size: 16px;
-            line-height: 19.2px;
-            width: 100%;
-            height: 100%;
-            box-sizing: border-box;
-            padding-top: 15px;
-            padding-left: 25px;
-            padding-right: 50px;
-            padding-bottom: 15px;
-            background-color: rgba(20, 29, 47, 1);
-            border-radius: 10px;
-            border: none;
-            resize: none;
-
-            &:focus {
-                border-color: rgb(0, 190, 232);
-                outline: none;
-            }
-
-            &::placeholder {
-                color: white;
-                opacity: 1;
-            }
-        }
-    }
-
-    textarea::-webkit-scrollbar {
-        width: 15px;
-        background-color: transparent;
-    }
-
-    textarea::-webkit-scrollbar-track {
-        background-color: transparent;
-    }
-
-    textarea::-webkit-scrollbar-thumb {
-        background-color: rgb(75, 71, 255);
-        border-radius: 20px;
-        border: 3px solid transparent;
-        background-clip: content-box;
+      &:not(:disabled) {
+        background-color: #007bff;
+        color: #fff;
+        opacity: 1;
         cursor: pointer;
+      }
     }
-
-    .formSubmit {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
-        >button {
-            background-color: #00bee8;
-            width: 253px;
-            height: 58px;
-            box-shadow: 4px 4px 4px #00000040;
-            border-radius: 10px;
-            border: none;
-            color: #fff;
-            font-weight: 400;
-            font-size: 23px;
-            transform: scale(1);
-            transition: .2s ease-in-out;
-            opacity: .7;
-            cursor: pointer;
-
-            &:disabled {
-                background-color: #ccc;
-                color: #666;
-                cursor: not-allowed;
-            }
-
-            &:not(:disabled) {
-                background-color: #007bff;
-                color: #fff;
-                opacity: 1;
-                cursor: pointer;
-            }
-        }
-    }
+  }
 }
 
 .validMsg {
-    display: flex;
-    box-sizing: border-box;
-    padding: 0px 10px;
-    color: rgba(230, 28, 64, 1)
+  display: flex;
+  box-sizing: border-box;
+  padding: 0px 10px;
+  color: rgba(230, 28, 64, 1);
 }
 
 .formCheckbox {
-    width: 100%;
-    display: flex;
-    position: relative;
+  width: 100%;
+  display: flex;
+  position: relative;
 
-    >label {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 16.8px;
-        letter-spacing: 0em;
-        text-align: left;
-        position: relative;
-        width: 100%;
-        cursor: pointer;
-    }
+  > label {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+  }
 }
 
 .checkBoxLabel {
-    width: 100%;
-    display: block;
-    position: relative;
-    box-sizing: border-box;
+  width: 100%;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
 
-    >input {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 32px;
-        width: 32px;
-        cursor: pointer;
-    }
+  > input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+  }
 }
 
 .privacyText {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    >span {
-        >a {
-            color: rgba(75, 71, 255, 1);
-            text-decoration: none;
+  > span {
+    > a {
+      color: rgba(75, 71, 255, 1);
+      text-decoration: none;
 
-            &:visited {
-                color: rgba(75, 71, 255, 1);
-                text-decoration: none;
-            }
-        }
+      &:visited {
+        color: rgba(75, 71, 255, 1);
+        text-decoration: none;
+      }
     }
+  }
 }
 
 .goUp {
+  display: flex;
+  position: absolute;
+  z-index: 1000;
+  right: 100px;
+  bottom: 35px;
+  border: 2px solid;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+
+  > a {
     display: flex;
-    position: absolute;
-    z-index: 1000;
-    right: 100px;
-    bottom: 35px;
-    border: 2px solid;
-    border-radius: 50%;
-    padding: 5px;
-    cursor: pointer;
+  }
 
-    >a {
-        display: flex;
-    }
-
-    &:hover {
-        filter: brightness(0) saturate(100%) invert(47%) sepia(81%) saturate(1427%) hue-rotate(155deg) brightness(104%) contrast(101%);
-    }
+  &:hover {
+    filter: brightness(0) saturate(100%) invert(47%) sepia(81%) saturate(1427%)
+      hue-rotate(155deg) brightness(104%) contrast(101%);
+  }
 }
 
 .messageSentConfirmation {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: rgb(112, 230, 28);
-    text-align: center;
-    text-shadow: 1px 1px 2px black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgb(112, 230, 28);
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
 }
 
-@media (max-width: 841px) {
-    .contactHeader {
-        gap: 8px;
-    }
+@media (max-width: 1120px) {
+  .contactHeader {
+    gap: 8px;
+  }
 
-    .contactTitle {
-        >h2 {
-            font-size: 66px;
-        }
+  .contactTitle {
+    > h2 {
+      font-size: 66px;
     }
+  }
 
-    .blueLine {
-        width: 75px;
-    }
+  .blueLine {
+    width: 75px;
+  }
 
-    .contactContent {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: unset;
-        padding-left: 75px;
-        padding-right: 75px;
-    }
+  .contactContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: unset;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
 
-    .contactText {
-        width: 100%;
-        margin-bottom: 50px;
-    }
+  .contactText {
+    width: 100%;
+    margin-bottom: 50px;
+  }
 
-    .contactFormContainer {
-        width: 100%;
-    }
+  .contactFormContainer {
+    width: 100%;
+  }
 
-    .formSubmit {
-        >button {
-            width: 195px !important;
-            height: 49px !important;
-            font-size: 16px !important;
-        }
+  .formSubmit {
+    > button {
+      width: 195px !important;
+      height: 49px !important;
+      font-size: 16px !important;
     }
+  }
 
-    .contactBackground {
-        left: -300px;
-        top: 700px;
-    }
+  .contactBackground {
+    left: -300px;
+    top: 700px;
+  }
 
-    .goUp {
-        right: 25px;
-    }
+  .goUp {
+    right: 25px;
+  }
 }
 
-@media (max-width: 425px) {
-    .contactTitle h2 {
-        font-size: 45px;
-    }
+@media (max-width: 450px) {
+  .contactTitle h2 {
+    font-size: 45px;
+  }
 
-    .contactTextTitle h3 {
-        font-size: 23px;
-    }
+  .contactTextTitle h3 {
+    font-size: 23px;
+  }
 
-    .blueLine {
-        width: 45px;
-    }
+  .blueLine {
+    width: 20px;
+  }
 
-    .privacyText {
-        font-size: 14px;
-    }
+  .privacyText {
+    font-size: 14px;
+  }
 
-    .contactContent {
-        padding-left: 45px;
-        padding-right: 45px;
-    }
+  .contactContent {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }

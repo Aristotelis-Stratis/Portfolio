@@ -1,58 +1,118 @@
 <section>
-    <div class="contactHeader">
-        <div class="blueLine"></div>
-        <div class="contactTitle">
-            <h2>{{ 'CONTACT_SECTION.TITLE' | translate }}</h2>
-        </div>
+  <div class="contactHeader">
+    <div class="blueLine"></div>
+    <div class="contactTitle">
+      <h2>{{ "CONTACT_SECTION.TITLE" | translate }}</h2>
     </div>
-    <div class="contactContent">
-        <div class="contactText">
-            <div class="contactTextContainer" data-aos="fade-right" data-aos-offset="270" data-aos-easing="ease-in-sine"
-                data-aos-duration="500" data-aos-anchor-placement="top-bottom">
-                <div class="contactTextTitle">
-                    <h3>{{ 'CONTACT_SECTION.TEXT' | translate }}</h3>
-                </div>
-                <div class="contactTextContent">
-                    <span>{{ 'CONTACT_SECTION.CONTENT_ONE' | translate }}</span>
-                </div>
-                <div class="contactTextContent" [innerHTML]="'CONTACT_SECTION.CONTENT_TWO' | translate"></div>
-            </div>
+  </div>
+  <div class="contactContent">
+    <div class="contactText">
+      <div
+        class="contactTextContainer"
+        data-aos="fade-right"
+        data-aos-offset="270"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="500"
+        data-aos-anchor-placement="top-bottom"
+      >
+        <div class="contactTextTitle">
+          <h3>{{ "CONTACT_SECTION.TEXT" | translate }}</h3>
         </div>
-        <div class="contactFormContainer">
-            <form class="contactForm" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-                <div class="inputField"
-                    [ngClass]="{'valid-border': name.valid && (name.dirty || name.touched), 'invalid-border': name.invalid && (name.dirty || name.touched)}">
-                    <input #name="ngModel" [(ngModel)]="contactData.name" minlength="3" class="nameField" type="text"
-                        autocomplete="name" name="name" placeholder="{{ 'FORM.NAME_PLACEHOLDER' | translate }}" required>
-                    <span class="validMsg" *ngIf="name.invalid && name.touched">{{ 'FORM.NAME_VALIDATION_MESSAGE' | translate }}</span>
-                </div>
-                <div class="inputField"
-                    [ngClass]="{'valid-border': email.valid && (email.dirty || email.touched), 'invalid-border': email.invalid && (email.dirty || email.touched)}">
-                    <input #email="ngModel" [(ngModel)]="contactData.email" class="emailField" type="email"
-                        autocomplete="name" name="email" placeholder="{{ 'FORM.EMAIL_PLACEHOLDER' | translate }}" required
-                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
-                    <span class="validMsg" *ngIf="email.invalid && email.touched">{{ 'FORM.EMAIL_VALIDATION_MESSAGE' | translate }}</span>
-                </div>
-                <div class="textField"
-                    [ngClass]="{'valid-border': message.valid && (message.dirty || message.touched), 'invalid-border': message.invalid && (message.dirty || message.touched)}">
-                    <textarea #message="ngModel" [(ngModel)]="contactData.message" autocomplete="off" minlength="4"
-                        class="messageField" name="message" placeholder="{{ 'FORM.MESSAGE_PLACEHOLDER' | translate }}" required></textarea>
-                    <span class="validMsg" *ngIf="message.invalid && message.touched">{{ 'FORM.MESSAGE_VALIDATION_MESSAGE' | translate }}.</span>
-                </div>
-                <div class="formSubmit">
-                    <button type="submit" [disabled]="!contactForm.valid">{{ 'FORM.SEND_MESSAGE' | translate }}</button>
-                    <div *ngIf="messageSent" class="messageSentConfirmation">
-                        {{ 'FORM.MESSAGE_SENT_CONFIRMATION' | translate }}
-                    </div>
-                </div>
-            </form>
+        <div class="contactTextContent">
+          <span>{{ "CONTACT_SECTION.CONTENT_ONE" | translate }}</span>
         </div>
+        <div
+          class="contactTextContent"
+          [innerHTML]="'CONTACT_SECTION.CONTENT_TWO' | translate"
+        ></div>
+      </div>
+    </div>
+    <div class="contactFormContainer">
+      <form
+        class="contactForm"
+        (ngSubmit)="onSubmit(contactForm)"
+        #contactForm="ngForm"
+      >
+        <div
+          class="inputField"
+          [ngClass]="{
+            'valid-border': name.valid && (name.dirty || name.touched),
+            'invalid-border': name.invalid && (name.dirty || name.touched)
+          }"
+        >
+          <input
+            #name="ngModel"
+            [(ngModel)]="contactData.name"
+            minlength="3"
+            class="nameField"
+            type="text"
+            autocomplete="name"
+            name="name"
+            placeholder="{{ 'FORM.NAME_PLACEHOLDER' | translate }}"
+            required
+          />
+          <span class="validMsg" *ngIf="name.invalid && name.touched">{{
+            "FORM.NAME_VALIDATION_MESSAGE" | translate
+          }}</span>
+        </div>
+        <div
+          class="inputField"
+          [ngClass]="{
+            'valid-border': email.valid && (email.dirty || email.touched),
+            'invalid-border': email.invalid && (email.dirty || email.touched)
+          }"
+        >
+          <input
+            #email="ngModel"
+            [(ngModel)]="contactData.email"
+            class="emailField"
+            type="email"
+            autocomplete="name"
+            name="email"
+            placeholder="{{ 'FORM.EMAIL_PLACEHOLDER' | translate }}"
+            required
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+          />
+          <span class="validMsg" *ngIf="email.invalid && email.touched">{{
+            "FORM.EMAIL_VALIDATION_MESSAGE" | translate
+          }}</span>
+        </div>
+        <div
+          class="textField"
+          [ngClass]="{
+            'valid-border': message.valid && (message.dirty || message.touched),
+            'invalid-border':
+              message.invalid && (message.dirty || message.touched)
+          }"
+        >
+          <textarea
+            #message="ngModel"
+            [(ngModel)]="contactData.message"
+            autocomplete="off"
+            minlength="4"
+            class="messageField"
+            name="message"
+            placeholder="{{ 'FORM.MESSAGE_PLACEHOLDER' | translate }}"
+            required
+          ></textarea>
+          <span class="validMsg" *ngIf="message.invalid && message.touched"
+            >{{ "FORM.MESSAGE_VALIDATION_MESSAGE" | translate }}.</span
+          >
+        </div>
+        <div class="formSubmit">
+          <button type="submit" [disabled]="!contactForm.valid">
+            {{ "FORM.SEND_MESSAGE" | translate }}
+          </button>
+          <div *ngIf="messageSent" class="messageSentConfirmation">
+            {{ "FORM.MESSAGE_SENT_CONFIRMATION" | translate }}
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="contactBackground"></div>
 
-    </div>
-    <div class="contactBackground"></div>
-    <div class="">
-        <div class="goUp">
-            <a href="#top"><img src="/assets/img/shapes/arrow_up.png" alt="Go up"></a>
-        </div>
-    </div>
+  <div class="goUp">
+    <a href="#top"><img src="/assets/img/shapes/arrow_up.png" alt="Go up" /></a>
+  </div>
 </section>
