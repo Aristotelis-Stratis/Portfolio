@@ -2,7 +2,8 @@
   "HEADER": {
     "ABOUT": "About Me",
     "SKILLS": "Skills",
-    "PORTFOLIO": "Portfolio"
+    "PORTFOLIO": "Portfolio",
+    "CONTACT": "Contact"
   },
   "LANDING_PAGE": {
     "I_AM": "I am",

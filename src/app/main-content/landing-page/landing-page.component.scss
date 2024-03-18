@@ -1,459 +1,457 @@
 section {
-    background-color: rgb(20, 29, 47);
+  background-color: rgb(20, 29, 47);
 }
 
 .landingPage {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    box-sizing: border-box;
-    padding-top: 109.03px;
-    padding-left: 100px;
-    padding-right: 100px;
-    align-items: center;
-    justify-content: center;
-}
-
-.myImageContainer {
-    // background-image: url('/assets/img/blur-shapes/part_1.png');
-    // background-position: center;
-    // background-size: contain;
-    // background-repeat: no-repeat;
-    width: 125%;
-
-    >img {
-        width: 500px;
-        height: 700px;
-        object-fit: contain;
-    }
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 109.03px;
+  padding-left: 100px;
+  padding-right: 100px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .lpImage {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.myImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  //   border: 2px solid;
+}
+
+.myPortrait {
+  width: 600px;
+  height: calc(100% - 277px);
+  z-index: 999;
+  object-fit: contain;
+  //   border: 2px solid burlywood;
+}
+
+.myPortraitBackground {
+  position: absolute;
+  z-index: 998;
+  height: calc(100% - 277px);
+  width: 800px;
+  object-fit: contain;
+  //   border: 2px solid turquoise;
 }
 
 .lpText {
-    display: flex;
-    align-items: center;
-    width: 60%;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 1000;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1000;
+  //   border: 2px solid blue;
 }
 
 .myNameContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    width: 100%;
-    height: 172px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-direction: row;
+  //   border: 2px solid red;
+  width: 100%;
 }
 
 .titleOne {
-    display: flex;
-    height: 100%;
+  display: flex;
+  height: 100%;
+  //   border: 2px solid;
 }
 
 .titleOne span {
-    display: inline-block;
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    font-size: 67px;
-    font-weight: 400;
+  display: inline-block;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-size: 67px;
+  font-weight: 400;
 }
 
 .titleTwo span {
-    font-size: 73px;
-    font-weight: 700;
-    line-height: 108px;
+  font-size: 73px;
+  font-weight: 700;
+  line-height: 108px;
 }
 
 .titleThree span {
-    font-size: 60.4px;
-    font-weight: 400;
-    color: rgba(75, 71, 255, 1);
-    line-height: 69.6px;
+  font-size: 60.4px;
+  font-weight: 400;
+  color: rgba(75, 71, 255, 1);
+  line-height: 69.6px;
 }
 
 .letsTalkContainer {
-    display: flex;
-    box-sizing: border-box;
-    padding-top: 60px;
+  display: flex;
+  box-sizing: border-box;
+  padding-top: 60px;
 }
 
 .letsTalkButton {
-    background-color: rgba(0, 190, 232, 1);
-    border: none;
-    border-radius: 10px;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 23px;
-    font-weight: 400;
-    line-height: 27.6px;
-    font-family: 'Poppins';
-    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-    transition: background-color 125ms ease, padding 125ms ease, margin 125ms ease;
+  background-color: rgba(0, 190, 232, 1);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 27.6px;
+  font-family: "Poppins";
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: background-color 125ms ease, padding 125ms ease, margin 125ms ease;
 
-    &:hover {
-        background-color: rgba(75, 71, 255, 1);
-        padding: 20px 40px;
-        margin: -5px -8px;
-    }
+  &:hover {
+    background-color: rgba(75, 71, 255, 1);
+    padding: 20px 40px;
+    margin: -5px -8px;
+  }
 }
 
 .landingPageBackground {
-    height: 970px;
-    width: 100%;
-    max-width: 1920px;
-    background-image: url('/assets/img/fold.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 150px;
-    display: flex;
-    z-index: 999;
+  height: 970px;
+  width: 100%;
+  max-width: 1920px;
+  background-image: url("/assets/img/fold.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 315px;
+  display: flex;
+  z-index: 999;
 }
 
 .socials {
-    display: flex;
-    position: relative;
-    align-items: end;
-    flex-direction: row;
-    z-index: 1001;
-    height: 40px;
-    width: 100%;
+  display: flex;
+  position: relative;
+  align-items: end;
+  flex-direction: row;
+  z-index: 1001;
+  height: 40px;
+  width: 100%;
+  top: 100px;
 }
 
 .socialsContainer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .social-links {
+  display: flex;
+  position: relative;
+  left: 120px;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 42px;
+
+  > a {
     display: flex;
-    position: relative;
-    left: 120px;
     align-items: center;
-    justify-content: space-evenly;
-    gap: 42px;
-
-    >a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 23px;
-        font-weight: 400;
-        color: white;
-        text-decoration: none;
-        cursor: pointer;
-
-        img {
-            transition: transform 125ms ease;
-
-            &:hover {
-                transform: scale(1.3);
-            }
-        }
-    }
-}
-
-.blueLine {
-    background-color: rgb(75, 71, 255);
-    width: 100px;
-    border-radius: 2px;
-    height: 4px;
-}
-
-.scroll-down {
-    display: flex;
     justify-content: center;
-    align-items: center;
-    writing-mode: vertical-lr;
     font-size: 23px;
     font-weight: 400;
     color: white;
-    z-index: 1001;
-    height: 160px;
-    gap: 5px;
-    margin-right: 100px;
+    text-decoration: none;
+    cursor: pointer;
+
+    img {
+      transition: transform 125ms ease;
+
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+  }
 }
 
-@media(min-width: 2160px) {
-    .landingPage {
-        padding-top: 109.03px;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .socials {
-        width: 100%;
-        top: 100px;
-    }
-
-    .social-links {
-        left: 20px;
-    }
-
-    .blueLine {
-        width: 19%;
-    }
-
-    .scroll-down {
-        right: 20%;
-    }
-
-    .landingPageBackground {
-        background-image: url('/assets/img/fold_2.png');
-        top: 500px;
-    }
+.blueLine {
+  background-color: rgb(75, 71, 255);
+  width: 100px;
+  border-radius: 2px;
+  height: 4px;
 }
 
-@media (max-width: 1700px) {
-    .landingPageBackground {
-        top: 200px;
-    }
+.scroll-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  writing-mode: vertical-lr;
+  font-size: 23px;
+  font-weight: 400;
+  color: white;
+  z-index: 1001;
+  height: 160px;
+  gap: 5px;
+  margin-right: 100px;
+}
+
+@media (max-width: 1740px) {
+  .landingPageBackground {
+    top: 400px;
+  }
 }
 
 @media (max-width: 1480px) {
+  .titleOne {
+    display: flex;
+    align-items: center;
+  }
 
-    .myImageContainer {
-        >img {
-            width: 400px;
-            position: relative;
-            top: -100px;
-        }
-    }
+  .titleOne span {
+    font-size: 45.5px;
+    padding-top: 5px;
+  }
 
-    .titleOne {
-        display: flex;
-        align-items: center;
-    }
+  .titleTwo span {
+    font-size: 59px;
+    line-height: 60px;
+  }
 
-    .titleOne span {
-        font-size: 45.5px;
-        padding-top: 5px;
-    }
+  .titleThree span {
+    font-size: 49px;
+    line-height: 55.5px;
+  }
 
-    .titleTwo span {
-        font-size: 59px;
-        line-height: 60px;
-    }
-
-    .titleThree span {
-        font-size: 49px;
-        line-height: 55.5px;
-    }
-
-    .landingPageBackground {
-        top: 182px;
-    }
+  .landingPageBackground {
+    top: 475px;
+  }
 }
 
 @media (max-width: 1240px) {
+  .titleOne {
+    display: flex;
+    align-items: center;
+  }
 
-    .myImageContainer {
-        >img {
-            width: 370px;
-        }
-    }
+  .titleOne span {
+    font-size: 32.5px;
+    padding-top: 5px;
+  }
 
-    .titleOne {
-        display: flex;
-        align-items: center;
-    }
+  .titleTwo span {
+    font-size: 47px;
+    line-height: 26px;
+  }
 
-    .titleOne span {
-        font-size: 32.5px;
-        padding-top: 5px;
-    }
-
-    .titleTwo span {
-        font-size: 47px;
-        line-height: 26px;
-    }
-
-    .titleThree span {
-        font-size: 39px;
-        line-height: 33.5px;
-    }
+  .titleThree span {
+    font-size: 39px;
+    line-height: 33.5px;
+  }
 }
 
 @media (max-width: 1065px) {
-    .titleOne span {
-        font-size: 32.5px;
-        padding-top: 5px;
-    }
+  .titleOne span {
+    font-size: 32.5px;
+    padding-top: 5px;
+  }
 
-    .titleTwo span {
-        font-size: 39.5px;
-        line-height: 26px;
-    }
+  .titleTwo span {
+    font-size: 39.5px;
+    line-height: 26px;
+  }
 
-    .titleThree span {
-        font-size: 32.6px;
-        line-height: 33.5px;
-    }
-
-
+  .titleThree span {
+    font-size: 32.6px;
+    line-height: 33.5px;
+  }
 }
 
 @media (max-width: 999px) {
-
-    .landingPage {
-        padding-left: 24px;
-        padding-right: 24px;
-    }
+  .landingPage {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 @media (max-width: 900px) {
-    .scroll-down {
-        display: none;
-    }
+  .scroll-down {
+    display: none;
+  }
 }
 
 @media (max-width: 841px) {
-    section {
-        padding-top: 109px;
+  section {
+    padding-top: 109px;
+  }
+
+  .myPortrait {
+    width: 350px;
+    height: fit-content;
+  }
+
+  .myPortraitBackground {
+    width: fit-content;
+    height: 450px;
+  }
+
+  .myImageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    margin-top: 20px;
+  }
+
+  .lpImage {
+    width: 100%;
+    height: 100%;
+  }
+
+  .landingPage {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .landingPageBackground {
+    top: 285px;
+    height: 450px;
+  }
+
+  .lpText {
+    height: unset;
+    width: 100%;
+  }
+
+  .myNameContainer {
+    height: unset;
+    justify-content: center;
+  }
+
+  .socials {
+    width: 100%;
+    top: 30px;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 35px;
+  }
+
+  .socialsContainer {
+    justify-content: center;
+  }
+
+  .social-links {
+    flex-direction: row;
+    position: unset;
+  }
+
+  .blueLine {
+    position: absolute;
+    left: 0;
+    width: 15%;
+  }
+
+  .scroll-down {
+    display: none;
+  }
+
+  .titleOne {
+    align-items: center;
+  }
+
+  .titleOne span {
+    font-size: 32.5px;
+    padding-top: 5px;
+  }
+
+  .titleTwo span {
+    font-size: 41px;
+    line-height: 26px;
+  }
+
+  .titleThree span {
+    font-size: 34px;
+    line-height: 33.5px;
+  }
+
+  .letsTalkContainer {
+    padding-top: 25px;
+  }
+
+  .letsTalkButton {
+    padding: 10px 20px;
+    font-size: 16px;
+
+    &:hover {
+      padding: 10px 30px;
+      margin: 0px 0px;
     }
+  }
 
-    .myImageContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-size: 450px;
-        height: 400px;
-        margin-top: 20px;
-
-        >img {
-            height: 100%;
-            width: unset;
-            top: -17px;
-        }
-    }
-
-    .lpImage {
-        width: 100%;
-        height: 100%;
-    }
-
-    .landingPage {
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .landingPageBackground {
-        top: 285px;
-        height: 450px;
-    }
-
-    .lpText {
-        height: unset;
-        width: 100%;
-    }
-
-    .myNameContainer {
-        height: unset;
-        justify-content: center;
-    }
-
-    .socials {
-        width: 100%;
-        top: 30px;
-        flex-direction: column;
-        justify-content: space-around;
-        margin-top: 35px;
-    }
-
-    .socialsContainer {
-        justify-content: center;
-    }
-
-    .social-links {
-        flex-direction: row;
-        position: unset;
-    }
-
-    .blueLine {
-        position: absolute;
-        left: 0;
-        width: 15%;
-    }
-
-    .scroll-down {
-        display: none;
-    }
-
-    .titleOne {
-        align-items: center;
-    }
-
-    .titleOne span {
-        font-size: 32.5px;
-        padding-top: 5px;
-    }
-
-    .titleTwo span {
-        font-size: 41px;
-        line-height: 26px;
-    }
-
-    .titleThree span {
-        font-size: 34px;
-        line-height: 33.5px;
-    }
-
-    .letsTalkContainer {
-        padding-top: 25px;
-    }
-
-    .letsTalkButton {
-        padding: 10px 20px;
-        font-size: 16px;
-
-        &:hover {
-            padding: 10px 30px;
-            margin: 0px 0px;
-        }
-    }
-
-    .myEmail {
-        display: none !important;
-    }
-
+  .myEmail {
+    display: none !important;
+  }
 }
 
 @media (max-width: 700px) {
-    .landingPageBackground {
-        top: 320px;
-    }
+  .landingPageBackground {
+    top: 320px;
+  }
 }
 
 @media (max-width: 535px) {
-    .landingPageBackground {
-        top: 330px;
-    }
+  .landingPageBackground {
+    top: 330px;
+  }
 
-    .titleOne span {
-        font-size: 25.5px;
-        padding-top: 5px;
-    }
+  .titleOne span {
+    font-size: 25.5px;
+    padding-top: 5px;
+  }
 
-    .titleTwo span {
-        font-size: 29px;
-        line-height: 26px;
-    }
+  .titleTwo span {
+    font-size: 29px;
+    line-height: 26px;
+  }
 
-    .titleThree span {
-        font-size: 24.2px;
-        line-height: 33.5px;
-    }
+  .titleThree span {
+    font-size: 24.2px;
+    line-height: 33.5px;
+  }
+
+  .myPortrait {
+    width: 265px;
+  }
+  .myPortraitBackground {
+    height: 350px;
+  }
+}
+
+@media (max-width: 375px) {
+  .myPortraitBackground {
+    height: 300px;
+    width: 300px;
+  }
+
+  .titleOne span {
+    font-size: 24px;
+    padding-top: 5px;
+  }
+
+  .titleTwo span {
+    font-size: 23px;
+    line-height: 26px;
+  }
+
+  .titleThree span {
+    font-size: 20.6px;
+    line-height: 33.5px;
+  }
 }

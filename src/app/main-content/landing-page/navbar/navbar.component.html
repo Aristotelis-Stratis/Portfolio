@@ -3,12 +3,12 @@
     <a [routerLink]="['/']" (click)="scrollToTop()"><span>Aristotelis</span></a>
   </div>
   <div class="desktopNav">
-    <a href="#aboutMe">{{ 'HEADER.ABOUT' | translate }}</a>
-    <a href="#mySkills">{{ 'HEADER.SKILLS' | translate }}</a>
-    <a href="#portfolio">{{ 'HEADER.PORTFOLIO' | translate }}</a>
+    <a href="#aboutMe">{{ "HEADER.ABOUT" | translate }}</a>
+    <a href="#mySkills">{{ "HEADER.SKILLS" | translate }}</a>
+    <a href="#portfolio">{{ "HEADER.PORTFOLIO" | translate }}</a>
     <span class="translation">
-      <span (click)="switchLanguage('en')">EN</span>|
-      <span (click)="switchLanguage('de')">DE</span>
+      <span (click)="switchLanguage('en')" [ngClass]="{ 'active': getCurrentLanguage() === 'en' }">EN</span>|
+      <span (click)="switchLanguage('de')" [ngClass]="{ 'active': getCurrentLanguage() === 'de' }">DE</span>
     </span>
   </div>
   <div class="mobileMenu" (click)="toggleMenu()">
@@ -34,9 +34,15 @@
     />
   </div>
   <div class="mobileNav" [class.open]="isMenuOpen">
-    <div><a href="#aboutMe" (click)="closeMenu()">About me</a></div>
-    <div><a href="#mySkills" (click)="closeMenu()">My skills</a></div>
-    <div><a href="#portfolio" (click)="closeMenu()">Portfolio</a></div>
-    <div><a href="#contact" (click)="closeMenu()">Contact</a></div>
+    <div><a href="#aboutMe" (click)="closeMenu()">{{ "HEADER.ABOUT" | translate }}</a></div>
+    <div><a href="#mySkills" (click)="closeMenu()">{{ "HEADER.SKILLS" | translate }}</a></div>
+    <div><a href="#portfolio" (click)="closeMenu()">{{ "HEADER.PORTFOLIO" | translate }}</a></div>
+    <div><a href="#contact" (click)="closeMenu()">{{ "HEADER.CONTACT" | translate }}</a></div>
+    <div>
+      <span class="translation">
+        <span (click)="switchLanguage('en')" [ngClass]="{ 'active': getCurrentLanguage() === 'en' }">EN</span>|
+        <span (click)="switchLanguage('de')" [ngClass]="{ 'active': getCurrentLanguage() === 'de' }">DE</span>
+      </span>
+    </div>
   </div>
 </div>

@@ -92,23 +92,10 @@ section {
     padding-bottom: 20px;
 }
 
-@media(min-width: 2160px) {
-    section {
-        width: 100%;
-        padding-top: 400px;
-        padding-right: 20%;
-    }
-
-    .blueLine {
-        width: 20%;
-        position: absolute;
-        right: 0;
-    }
-}
 
 @media (max-width: 1400px) {
     .aboutText {
-        width: 500px;
+        width: 452px;
     }
 }
 
@@ -154,6 +141,15 @@ section {
     .aboutText {
         width: 100%;
     }
+}
+
+@media(max-width:525px){
+    .imgContainer {
+        >img {
+            height: 35px;
+            object-fit: contain;
+        }
+      }
 }
 
 @media (max-width: 425px) {

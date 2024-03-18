@@ -19,6 +19,10 @@ export class NavbarComponent {
     this.translate.use(language);
   }
 
+  getCurrentLanguage(): string {
+    return this.translate.currentLang;
+  }
+
   toggleMenu(): void {
     if (!this.isMenuOpen) {
       this.transitionState = 'open';

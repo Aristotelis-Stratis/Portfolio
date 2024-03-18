@@ -2,7 +2,8 @@
   "HEADER": {
     "ABOUT": "Über Mich",
     "SKILLS": "Fähigkeiten",
-    "PORTFOLIO": "Portfolio"
+    "PORTFOLIO": "Portfolio",
+    "CONTACT": "Kontakt"
   },
   "LANDING_PAGE": {
     "I_AM": "Ich bin",
@@ -60,7 +61,7 @@
   "FOOTER": {
     "IMPRINT": "Impressum"
   },
- "IMPRINT": {
+  "IMPRINT": {
     "TITLE": "Impressum",
     "TMG_INFO": "Angaben gemäß § 5 TMG",
     "POSTAL_ADDRESS": "Postanschrift",
