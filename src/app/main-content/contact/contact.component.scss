@@ -413,7 +413,17 @@ section {
   }
 
   .goUp {
-    right: 25px;
+    right: 75px;
+  }
+}
+
+@media (max-width: 585px) {
+  .contactContent {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .goUp {
+    right: 50px;
   }
 }
 
@@ -437,5 +447,8 @@ section {
   .contactContent {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .goUp {
+    right: 20px;
   }
 }

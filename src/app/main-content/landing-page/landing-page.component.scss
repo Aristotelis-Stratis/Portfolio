@@ -6,19 +6,20 @@ section {
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: 80vh;
   box-sizing: border-box;
   padding-top: 109.03px;
   padding-left: 100px;
   padding-right: 100px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .lpImage {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 40%;
 }
 
 .myImageContainer {
@@ -31,7 +32,7 @@ section {
 }
 
 .myPortrait {
-  width: 600px;
+  width: 500px;
   height: calc(100% - 277px);
   z-index: 999;
   object-fit: contain;
@@ -50,11 +51,13 @@ section {
 .lpText {
   display: flex;
   align-items: center;
-  width: 50%;
+  width: fit-content;
   flex-direction: column;
   justify-content: center;
   z-index: 1000;
-  //   border: 2px solid blue;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid red;
 }
 
 .myNameContainer {
@@ -201,6 +204,19 @@ section {
   height: 160px;
   gap: 5px;
   margin-right: 100px;
+  animation: jump 2s infinite;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 1740px) {
@@ -287,7 +303,7 @@ section {
   }
 }
 
-@media (max-width: 841px) {
+@media (max-width: 848px) {
   section {
     padding-top: 109px;
   }
@@ -318,6 +334,7 @@ section {
   .landingPage {
     flex-direction: column;
     padding: 0;
+    height: unset;
   }
 
   .landingPageBackground {

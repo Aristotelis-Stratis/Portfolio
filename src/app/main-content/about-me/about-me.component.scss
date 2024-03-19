@@ -3,7 +3,7 @@ section {
   height: fit-content;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
   z-index: 999;
   box-sizing: border-box;
@@ -13,7 +13,7 @@ section {
 }
 
 .aboutText {
-  width: 50%;
+  width: 40%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -33,6 +33,7 @@ section {
   align-items: center;
   justify-content: end;
   flex-direction: row;
+  margin-left: auto;
 }
 
 .pictureContainer {
@@ -62,7 +63,7 @@ section {
 
 .blueLine {
   height: 4px;
-  width: 30%;
+  width: 100px;
   background-color: rgba(0, 190, 232, 1);
 }
 
@@ -123,7 +124,7 @@ section {
   }
 }
 
-@media (max-width: 841px) {
+@media (max-width: 848px) {
   section {
     margin-top: 0;
     padding-top: 120px;

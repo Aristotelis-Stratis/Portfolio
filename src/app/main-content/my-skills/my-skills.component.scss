@@ -59,14 +59,13 @@ section {
 }
 
 .mySkillsContainer {
-  width: 40%;
+  width: 600px;
   height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   z-index: 1001;
-  padding-right: 40px;
-  padding-left: 20px;
+  padding-right: 100px;
 }
 
 .mySkills {
@@ -120,9 +119,10 @@ section {
 }
 
 .blueLine {
-  width: 5%;
-  position: relative;
-  bottom: 100px;
+  width: 100px;
+  position: absolute;
+  top: 70px;
+  right: 0;
   border-radius: 2px;
   background-color: rgb(75, 71, 255);
   height: 4px;
@@ -141,7 +141,15 @@ section {
   transform: rotate(31deg);
 }
 
-@media (max-width: 1241px) {
+@media (max-width: 1350px) {
+  .myDevStack {
+    grid-gap: 30px 0px;
+  }
+
+  .mySkillsContainer {
+    width: 450px;
+    padding-right: 100px;
+  }
   .mySkills {
     > h2 {
       font-size: 55px;
@@ -149,30 +157,28 @@ section {
   }
 
   .blueLine {
-    bottom: 130px;
+    top: 45px;
   }
 }
 
+@media (max-width: 1241px) {
+  section {
+    padding-left: 50px;
+  }
+  .mySkillsContainer {
+    width: 325px;
+  }
+}
 @media (max-width: 1111px) {
   .myDevStack {
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px 40px;
+    grid-gap: 30px 30px;
     width: 50%;
     margin-bottom: 40px;
-  }
-
-  .mySkillsContainer {
-    width: 45%;
   }
 }
 
 @media (max-width: 999px) {
-  section {
-    padding-left: 50px;
-  }
-}
-
-@media (max-width: 841px) {
   .mySkills {
     > h2 {
       font-size: 66px;
@@ -185,8 +191,7 @@ section {
 
   section {
     flex-direction: column-reverse;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 0px;
     padding-top: 120px;
   }
 
@@ -201,7 +206,8 @@ section {
   .mySkills {
     > h2,
     p {
-      padding-right: 20px;
+      padding-right: 50px;
+      width: unset;
     }
   }
 
@@ -222,8 +228,9 @@ section {
 
   .blueLine {
     position: absolute;
-    top: 170px;
+    top: 50px;
     right: 0;
+    width: 50px;
   }
 
   .getInTouchContainer {
@@ -264,23 +271,25 @@ section {
 
 @media (max-width: 450px) {
   section {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 0px;
   }
   .mySkills {
     padding-right: 0px;
 
     > h2 {
       font-size: 45px;
+      padding-right: 20px;
     }
 
     > p {
       padding-left: 10px;
+      padding-right: 20px;
     }
   }
 
   .blueLine {
-    top: 155px;
+    top: 35px;
+    width: 20px;
   }
 
   .stack {
