@@ -54,7 +54,7 @@
     "MESSAGE_PLACEHOLDER": "Your message",
     "NAME_VALIDATION_MESSAGE": "Please enter your name.",
     "EMAIL_VALIDATION_MESSAGE": "Please enter a valid email address.",
-    "MESSAGE_VALIDATION_MESSAGE": "Please enter a message.",
+    "MESSAGE_VALIDATION_MESSAGE": "Please enter a message",
     "SEND_MESSAGE": "Send message :)",
     "MESSAGE_SENT_CONFIRMATION": "The message has been sent successfully!"
   },
