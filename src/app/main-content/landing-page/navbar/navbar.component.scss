@@ -18,11 +18,11 @@
 .logo {
   cursor: pointer;
 
-  > a {
+  >a {
     color: white;
     text-decoration: none;
     font-size: 28px;
-    font-weight: 700;
+    font-weight: 600;
   }
 }
 
@@ -32,7 +32,7 @@
   align-items: center;
   gap: 29px;
 
-  > a {
+  >a {
     position: relative;
     font-size: 23px;
     font-weight: 400;
@@ -73,7 +73,8 @@
       }
     }
   }
-  > span {
+
+  >span {
     position: relative;
     font-size: 23px;
     font-weight: 400;
@@ -81,8 +82,10 @@
     text-decoration: none;
     color: rgba(255, 255, 255, 1);
     transition: color 200ms ease-in-out;
-    > span {
+
+    >span {
       cursor: pointer;
+
       &:nth-child(1) {
         padding-right: 5px;
       }
@@ -107,6 +110,7 @@
         left: 60%;
         width: 40%;
       }
+
       &:hover {
         color: rgba(28, 218, 230, 1);
 
@@ -138,13 +142,13 @@
   z-index: 2000;
   transition: right 0.2s ease;
 
-  > div {
+  >div {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
 
-    > a {
+    >a {
       color: white;
       font-size: 23px;
       text-decoration: none;
@@ -152,7 +156,8 @@
       padding: 15px 20px;
       text-align: left;
     }
-    > span {
+
+    >span {
       display: flex;
       font-size: 23px;
       justify-content: start;
@@ -161,7 +166,8 @@
       text-align: left;
       width: 130px;
       padding: 15px 20px;
-      > span {
+
+      >span {
         cursor: pointer;
       }
     }

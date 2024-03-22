@@ -6,9 +6,8 @@ section {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 80vh;
   box-sizing: border-box;
-  padding-top: 109.03px;
+  margin-top: 109.03px;
   padding-left: 100px;
   padding-right: 100px;
   align-items: center;
@@ -28,7 +27,6 @@ section {
   justify-content: center;
   width: fit-content;
   height: fit-content;
-  //   border: 2px solid;
 }
 
 .myPortrait {
@@ -36,7 +34,6 @@ section {
   height: calc(100% - 277px);
   z-index: 999;
   object-fit: contain;
-  //   border: 2px solid burlywood;
 }
 
 .myPortraitBackground {
@@ -45,7 +42,6 @@ section {
   height: calc(100% - 277px);
   width: 800px;
   object-fit: contain;
-  //   border: 2px solid turquoise;
 }
 
 .lpText {
@@ -57,7 +53,6 @@ section {
   z-index: 1000;
   margin-left: auto;
   margin-right: auto;
-  border: 2px solid red;
 }
 
 .myNameContainer {
@@ -65,14 +60,12 @@ section {
   align-items: end;
   justify-content: center;
   flex-direction: row;
-  //   border: 2px solid red;
   width: 100%;
 }
 
 .titleOne {
   display: flex;
   height: 100%;
-  //   border: 2px solid;
 }
 
 .titleOne span {
@@ -90,7 +83,7 @@ section {
 }
 
 .titleThree span {
-  font-size: 60.4px;
+  font-size: 65.4px;
   font-weight: 400;
   color: rgba(75, 71, 255, 1);
   line-height: 69.6px;
@@ -134,7 +127,7 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  top: 315px;
+  top: 310px;
   display: flex;
   z-index: 999;
 }
@@ -147,7 +140,6 @@ section {
   z-index: 1001;
   height: 40px;
   width: 100%;
-  top: 100px;
 }
 
 .socialsContainer {
@@ -165,7 +157,7 @@ section {
   justify-content: space-evenly;
   gap: 42px;
 
-  > a {
+  >a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -211,9 +203,11 @@ section {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-20px);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -221,7 +215,28 @@ section {
 
 @media (max-width: 1740px) {
   .landingPageBackground {
-    top: 400px;
+    top: 370px;
+  }
+}
+
+@media (max-width: 1570px) {
+  .titleOne span {
+    font-size: 48.5px;
+    padding-top: 5px;
+  }
+
+  .titleTwo span {
+    font-size: 65px;
+    line-height: 60px;
+  }
+
+  .titleThree span {
+    font-size: 58px;
+    line-height: 55.5px;
+  }
+
+  .landingPageBackground {
+    top: 420px;
   }
 }
 
@@ -242,12 +257,16 @@ section {
   }
 
   .titleThree span {
-    font-size: 49px;
+    font-size: 52.8px;
     line-height: 55.5px;
   }
 
   .landingPageBackground {
-    top: 475px;
+    top: 450px;
+  }
+
+  .lpText {
+    margin-right: unset;
   }
 }
 
@@ -258,18 +277,24 @@ section {
   }
 
   .titleOne span {
-    font-size: 32.5px;
-    padding-top: 5px;
+    font-size: 41.5px;
+    padding-top: 12px;
   }
 
   .titleTwo span {
-    font-size: 47px;
-    line-height: 26px;
+    font-size: 48px;
   }
 
   .titleThree span {
-    font-size: 39px;
-    line-height: 33.5px;
+    font-size: 43px;
+  }
+
+  .myPortrait {
+    width: 525px;
+  }
+
+  .landingPageBackground {
+    top: 325px;
   }
 }
 
@@ -280,13 +305,21 @@ section {
   }
 
   .titleTwo span {
-    font-size: 39.5px;
+    font-size: 38.5px;
     line-height: 26px;
   }
 
   .titleThree span {
-    font-size: 32.6px;
+    font-size: 35.3px;
     line-height: 33.5px;
+  }
+
+  .myPortrait {
+    width: 450px;
+  }
+
+  .myPortraitBackground {
+    width: 650px;
   }
 }
 
@@ -294,6 +327,14 @@ section {
   .landingPage {
     padding-left: 24px;
     padding-right: 24px;
+  }
+
+  .lpImage {
+    margin-left: 48px;
+  }
+
+  .lpText {
+    margin-right: 24px;
   }
 }
 
@@ -304,8 +345,17 @@ section {
 }
 
 @media (max-width: 848px) {
+  .lpImage {
+    margin-left: unset;
+  }
+
+  .lpText {
+    margin-left: unset;
+    margin-right: unset;
+  }
+
   section {
-    padding-top: 109px;
+    margin-top: 0px;
   }
 
   .myPortrait {
@@ -315,7 +365,7 @@ section {
 
   .myPortraitBackground {
     width: fit-content;
-    height: 450px;
+    height: 375px;
   }
 
   .myImageContainer {
@@ -338,7 +388,7 @@ section {
   }
 
   .landingPageBackground {
-    top: 285px;
+    top: 300px;
     height: 450px;
   }
 
@@ -394,7 +444,7 @@ section {
   }
 
   .titleThree span {
-    font-size: 34px;
+    font-size: 36.8px;
     line-height: 33.5px;
   }
 
@@ -417,17 +467,25 @@ section {
   }
 }
 
+@media (max-width:750px) {
+  .landingPageBackground {
+    top: 315px;
+  }
+}
+
 @media (max-width: 700px) {
   .landingPageBackground {
-    top: 320px;
+    top: 332px;
+  }
+}
+
+@media (max-width: 610px) {
+  .landingPageBackground {
+    top: 345px;
   }
 }
 
 @media (max-width: 535px) {
-  .landingPageBackground {
-    top: 330px;
-  }
-
   .titleOne span {
     font-size: 25.5px;
     padding-top: 5px;
@@ -435,30 +493,28 @@ section {
 
   .titleTwo span {
     font-size: 29px;
-    line-height: 26px;
+    line-height: 46px;
   }
 
   .titleThree span {
-    font-size: 24.2px;
-    line-height: 33.5px;
+    font-size: 26px;
+    line-height: 10px;
+  }
+}
+
+@media(max-width: 425px) {
+  .myPortrait {
+    width: 290px;
   }
 
-  .myPortrait {
-    width: 265px;
-  }
   .myPortraitBackground {
     height: 350px;
   }
 }
 
 @media (max-width: 375px) {
-  .myPortraitBackground {
-    height: 300px;
-    width: 300px;
-  }
-
   .titleOne span {
-    font-size: 24px;
+    font-size: 20px;
     padding-top: 5px;
   }
 
@@ -469,6 +525,6 @@ section {
 
   .titleThree span {
     font-size: 20.6px;
-    line-height: 33.5px;
+    line-height: 19.5px;
   }
 }
