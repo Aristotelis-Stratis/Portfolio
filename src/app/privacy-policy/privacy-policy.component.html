@@ -1,0 +1,124 @@
+<app-navbar></app-navbar>
+<section>
+  <h1>{{ 'PRIVACY_POLICY.TITLE' | translate }}</h1>
+  <h2>{{ 'PRIVACY_POLICY.SECTION_1_TITLE' | translate }}</h2>
+
+  <h3>{{ 'PRIVACY_POLICY.GENERAL_NOTES' | translate }}</h3>
+  <p>{{ 'PRIVACY_POLICY.GENERAL_NOTES_TEXT' | translate }}</p>
+  <h3>{{ 'PRIVACY_POLICY.DATA_COLLECTION' | translate }}</h3>
+  <h4>{{ 'PRIVACY_POLICY.DATA_COLLECTION_RESPONSIBILITY' | translate }}</h4>
+
+  <p>{{ 'PRIVACY_POLICY.DATA_PROCESSING' | translate }}</p>
+
+  <h4>{{ 'PRIVACY_POLICY.HOW_WE_COLLECT_DATA' | translate }}</h4>
+  <p>{{ 'PRIVACY_POLICY.HOW_WE_COLLECT_DATA_TEXT' | translate }}</p>
+  <p>{{ 'PRIVACY_POLICY.HOW_WE_COLLECT_DATA_AUTOMATICALLY' | translate }}</p>
+
+  <h4>{{ 'PRIVACY_POLICY.PURPOSE_OF_DATA_USAGE' | translate }}</h4>
+
+  <p>{{ 'PRIVACY_POLICY.DATA_USAGE_PART' | translate }}</p>
+
+  <h4>{{ 'PRIVACY_POLICY.YOUR_DATA_RIGHTS' | translate }}</h4>
+  <p>{{ 'PRIVACY_POLICY.YOUR_DATA_RIGHTS_TEXT' | translate }}</p>
+
+  <p>{{ 'PRIVACY_POLICY.DATA_PROTECTION_INQUIRIES' | translate }}</p>
+
+  <h2>2. Hosting</h2>
+
+  <p>Wir hosten die Inhalte unserer Website bei folgendem Anbieter:</p>
+
+  <h3>All-Inkl</h3>
+
+  <h2>{{ 'PRIVACY_POLICY.HOSTING_SECTION_TITLE' | translate }}</h2>
+  <p>{{ 'PRIVACY_POLICY.HOSTING_CONTENT' | translate }}</p>
+  <h3>{{ 'PRIVACY_POLICY.HOSTING_PROVIDER_TITLE' | translate }}</h3>
+  <p>
+    {{ 'PRIVACY_POLICY.HOSTING_PROVIDER_DETAILS' | translate }}
+    <a href="{{ 'PRIVACY_POLICY.HOSTING_PROVIDER_LINK' | translate }}" target="_blank" rel="noopener noreferrer">{{ 'PRIVACY_POLICY.HOSTING_PROVIDER_LINK' | translate }}</a>.
+  </p>
+  <p>{{ 'PRIVACY_POLICY.HOSTING_LEGAL_BASE' | translate }}</p>
+  <h4>{{ 'PRIVACY_POLICY.CONTRACT_PROCESSING' | translate }}</h4>
+  <p>{{ 'PRIVACY_POLICY.CONTRACT_PROCESSING_TEXT' | translate }}</p>
+
+  <h2>{{ 'PRIVACY_POLICY.GENERAL_INFO_AND_OBLIGATIONS_TITLE' | translate }}</h2>
+  
+  <h3>{{ 'PRIVACY_POLICY.DATA_PROTECTION' | translate }}</h3>
+  <p>{{ 'PRIVACY_POLICY.DATA_PROTECTION_TEXT' | translate }}</p>
+  
+  <p>{{ 'PRIVACY_POLICY.PERSONAL_DATA_COLLECTION' | translate }}</p>
+  
+  <p>{{ 'PRIVACY_POLICY.INTERNET_SECURITY_WARNING' | translate }}</p>
+  
+  <h3>{{ 'PRIVACY_POLICY.RESPONSIBLE_PARTY_NOTICE' | translate }}</h3>
+
+  <p>{{ 'PRIVACY_POLICY.RESPONSIBLE_ENTITY' | translate }}</p>
+  <p [innerHTML]="'PRIVACY_POLICY.RESPONSIBLE_ENTITY_DETAILS' | translate"></p>
+  <p [innerHTML]="'PRIVACY_POLICY.CONTACT_INFO' | translate"></p>
+  <p>{{ 'PRIVACY_POLICY.RESPONSIBLE_ENTITY_DEFINITION' | translate }}</p>
+  
+  <h3>{{ 'PRIVACY_POLICY.STORAGE_DURATION' | translate }}</h3>
+  <p>{{ 'PRIVACY_POLICY.STORAGE_DURATION_TEXT' | translate }}</p>
+  
+  <h3>{{ 'PRIVACY_POLICY.LEGAL_BASIS_GENERAL_NOTES' | translate }}</h3>
+
+  <p>{{ 'PRIVACY_POLICY.LEGAL_BASIS_FOR_PROCESSING' | translate }}</p>
+  
+  <h3>{{ 'PRIVACY_POLICY.DATA_RECIPIENTS' | translate }}</h3>
+
+  <p>{{ 'PRIVACY_POLICY.DATA_SHARING' | translate }}</p>
+  
+  <h3>{{ 'PRIVACY_POLICY.REVOCATION_OF_CONSENT' | translate }}</h3>
+  <p>{{ 'PRIVACY_POLICY.REVOCATION_OF_CONSENT_TEXT' | translate }}</p>
+
+  <h3>{{ 'PRIVACY_POLICY.OBJECTION_RIGHT' | translate }}</h3>
+  <p>{{ 'PRIVACY_POLICY.OBJECTION_RIGHT_TEXT' | translate }}</p>
+  
+  <p>{{ 'PRIVACY_POLICY.OBJECTION_RIGHT_FOR_DIRECT_ADVERTISING' | translate }}</p>
+
+  <h3>{{ 'PRIVACY_POLICY.RIGHT_TO_COMPLAIN' | translate }}</h3>
+  <p>{{ 'PRIVACY_POLICY.RIGHT_TO_COMPLAIN_TEXT' | translate }}</p>
+  
+  <h3>{{ 'PRIVACY_POLICY.RIGHT_TO_DATA_PORTABILITY' | translate }}</h3>
+
+  <p>{{ 'PRIVACY_POLICY.RIGHT_TO_DATA_PORTABILITY_TEXT' | translate }}</p>
+
+  <h3>{{ 'PRIVACY_POLICY.ACCESS_CORRECTION_DELETION' | translate }}</h3>
+  <p>{{ 'PRIVACY_POLICY.ACCESS_CORRECTION_DELETION_TEXT' | translate }}</p>
+
+  <h3>{{ 'PRIVACY_POLICY.RIGHT_TO_RESTRICTION_OF_PROCESSING' | translate }}</h3>
+  <p>{{ 'PRIVACY_POLICY.RIGHT_TO_RESTRICTION_OF_PROCESSING_TEXT' | translate }}</p>
+
+  <ul>
+    <li *ngFor="let condition of ('PRIVACY_POLICY.RESTRICTION_OF_PROCESSING_CONDITIONS' | translate)">
+      {{ condition }}
+    </li>
+  </ul>
+
+  <p>{{ 'PRIVACY_POLICY.RESTRICTED_PROCESSING_DATA_USAGE' | translate }}</p>
+
+  <h3>{{ 'PRIVACY_POLICY.SSL_TLS_ENCRYPTION' | translate }}</h3>
+
+  <p>{{ 'PRIVACY_POLICY.SSL_TLS_ENCRYPTION_EXPLANATION' | translate }}</p>
+
+  <p>{{ 'PRIVACY_POLICY.SSL_TLS_ENCRYPTION_EFFECT' | translate }}</p>
+
+  <h2>{{ 'PRIVACY_POLICY.DATA_COLLECTION_ON_WEBSITE' | translate }}</h2>
+
+  <h3>{{ 'PRIVACY_POLICY.CONTACT_FORM' | translate }}</h3>
+  <p>{{ 'PRIVACY_POLICY.CONTACT_FORM_TEXT' | translate }}</p>
+
+  <p>{{ 'PRIVACY_POLICY.PROCESSING_BASED_ON' | translate }}</p>
+
+  <p>{{ 'PRIVACY_POLICY.DATA_RETENTION_CONTACT_FORM' | translate }}</p>
+
+  <h3>{{ 'PRIVACY_POLICY.INQUIRY_VIA_EMAIL_PHONE_FAX' | translate }}</h3>
+  <p>{{ 'PRIVACY_POLICY.INQUIRY_VIA_EMAIL_PHONE_FAX_TEXT' | translate }}</p>
+
+<p>{{ 'PRIVACY_POLICY.BASIS_FOR_DATA_PROCESSING' | translate }}</p>
+
+<p>{{ 'PRIVACY_POLICY.RETENTION_OF_CONTACT_INQUIRY_DATA' | translate }}</p>
+
+<p>{{ 'PRIVACY_POLICY.SOURCE' | translate }}: <span [innerHTML]="'PRIVACY_POLICY.SOURCE_TEXT' | translate"></span></p>
+
+</section>
+<div class="landingPageBackground"></div>

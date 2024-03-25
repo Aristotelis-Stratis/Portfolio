@@ -6,6 +6,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import Aos from 'aos';
 import { TranslateService } from '@ngx-translate/core';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -15,6 +16,7 @@ import { TranslateService } from '@ngx-translate/core';
     MainContentComponent,
     ImprintComponent,
     FooterComponent,
+    PrivacyPolicyComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
@@ -22,9 +24,7 @@ import { TranslateService } from '@ngx-translate/core';
 
 export class AppComponent implements OnInit {
   constructor(private translate: TranslateService) {
-    // Setze die Standardsprache auf Englisch
     this.translate.setDefaultLang('en');
-    // Setze die initiale Sprache
     this.translate.use('en');
   }
 
@@ -32,7 +32,6 @@ export class AppComponent implements OnInit {
     Aos.init();
   }
 
-  // Methode zum Wechseln der Sprache
   switchLanguage(language: string) {
     this.translate.use(language);
   }

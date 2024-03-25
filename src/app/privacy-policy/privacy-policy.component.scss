@@ -7,7 +7,7 @@ section {
 }
 
 h1 {
-    font-size: 90px;
+    font-size: 66px;
     margin-block-end: 40px;
 }
 
@@ -19,7 +19,7 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    bottom: 0;
+    top: 300px;
     display: flex;
     z-index: 999;
 }
@@ -29,14 +29,18 @@ h3 {
     margin-block-start: 20px;
 }
 
+h4 {
+    margin-block-start: 10px;
+}
+
 p {
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
-@media (max-width: 1110px) {
+@media (max-width: 999px) {
     h1 {
-        font-size: 66px;
+        font-size: 48px;
     }
 }
 
@@ -46,23 +50,46 @@ p {
         padding: 50px 30px;
     }
 
-    h1 {
-        font-size: 66px;
-    }
-
     .landingPageBackground {
         top: 285px;
         height: 450px;
     }
 }
 
+@media (max-width: 655px) {
+    h1 {
+        font-size: 29px;
+    }
+}
 
 @media (max-width: 425px) {
     h1 {
-        font-size: 45px;
+        font-size: 24px;
     }
 
     h2 {
         font-size: 20px;
+    }
+
+    h3 {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 425px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+
+    p {
+        font-size: 14px;
     }
 }

@@ -52,26 +52,12 @@
           <span class="validMsg" *ngIf="message.invalid && message.touched">{{ "FORM.MESSAGE_VALIDATION_MESSAGE" |
             translate }}.</span>
         </div>
-
-
-
-
-
-
         <div class="checkbox" >
           <label for="checkbox">
             <img [src]="isPrivacyPolicyAccepted ? '/assets/img/checkbox/checkbox_checked.png' : '/assets/img/checkbox/checkbox.png'" alt="Checkbox" (click)="isPrivacyPolicyAccepted = !isPrivacyPolicyAccepted">
-            <span>I've read the <a href="">Privacy Policy</a> and agree to the processing of my data as outlined.</span>
+            <span>I've read the <a [routerLink]="['privacy-policy']">Privacy Policy</a> and agree to the processing of my data as outlined.</span>
           </label>
         </div>
-
-
-
-
-
-
-
-
         <div class="formSubmit">
           <button type="submit" [disabled]="!contactForm.valid || !isPrivacyPolicyAccepted">
             {{ "FORM.SEND_MESSAGE" | translate }}
