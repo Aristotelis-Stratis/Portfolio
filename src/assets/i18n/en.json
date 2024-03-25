@@ -133,7 +133,7 @@
     ],
     "RESTRICTED_PROCESSING_DATA_USAGE": "If you have restricted the processing of your personal data, these data - apart from their storage - may only be processed with your consent or for the establishment, exercise, or defense of legal claims or for the protection of the rights of another natural or legal person or for reasons of important public interest of the European Union or of a Member State.",
     "SSL_TLS_ENCRYPTION": "SSL or TLS encryption",
-    "SSL_TLS_ENCRYPTION_EXPLANATION": "For security reasons and to protect the transmission of confidential content, such as orders or inquiries you send to us as the site operator, this site uses SSL or TLS encryption. You can recognize an encrypted connection by the fact that the browser's address line changes from \"http://\" to \"https://\" and by the lock icon in your browser line.",
+    "SSL_TLS_ENCRYPTION_EXPLANATION": "For security reasons and to protect the transmission of confidential content, such as orders or inquiries you send to us as the site operator, this site uses SSL or TLS encryption. You can recognize an encrypted connection by the fact that the browser's address line changes from „http://“  to „https://“ and by the lock icon in your browser line.",
     "SSL_TLS_ENCRYPTION_EFFECT": "If SSL or TLS encryption is activated, the data you transmit to us cannot be read by third parties.",
     "DATA_COLLECTION_ON_WEBSITE": "4. Data Collection on This Website",
     "CONTACT_FORM": "Contact Form",
@@ -143,7 +143,7 @@
     "INQUIRY_VIA_EMAIL_PHONE_FAX": "Inquiry via Email, Phone, or Fax",
     "INQUIRY_VIA_EMAIL_PHONE_FAX_TEXT": "If you contact us by email, phone, or fax, your inquiry, including all resulting personal data (name, inquiry), will be stored and processed by us for the purpose of handling your request. We do not share this information without your consent.",
     "BASIS_FOR_DATA_PROCESSING": "The processing of this data is based on Article 6 (1) (b) GDPR if your request is related to the fulfillment of a contract or is necessary for carrying out pre-contractual measures. In all other cases, the processing is based on our legitimate interest in the effective processing of inquiries addressed to us (Article 6 (1) (f) GDPR) or on your consent (Article 6 (1) (a) GDPR) if it has been requested; the consent can be revoked at any time.",
-    "RETENTION_OF_CONTACT_INQUIRY_DATA": "The data sent to us via contact inquiries remain with us until you ask us to delete them, revoke your consent to storage, or the purpose for data storage ceases to apply (e.g., after the processing of your concern has been completed). Mandatory statutory provisions – in particular retention periods – remain unaffected.",
+    "RETENTION_OF_CONTACT_INQUIRY_DATA": "The data sent to us via contact inquiries remain with us until you ask us to delete them, revoke your consent to storage, or the purpose for data storage ceases to apply (e.g., after the processing of your concern has been completed). Mandatory statutory provisions - in particular retention periods - remain unaffected.",
     "SOURCE": "Source",
     "SOURCE_TEXT": "<a href='https://www.e-recht24.de'>https://www.e-recht24.de</a>"
   }
