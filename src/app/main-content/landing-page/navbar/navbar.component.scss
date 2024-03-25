@@ -1,6 +1,5 @@
 .nav {
   width: 100%;
-  max-width: 1920px;
   height: 109.03px;
   display: flex;
   justify-content: space-between;
@@ -12,7 +11,9 @@
   padding-right: 100px;
   position: fixed;
   top: 0;
+  left:0;
   z-index: 2001;
+  border:2px solid yellow;
 }
 
 .logo {

@@ -13,14 +13,16 @@ html {
 
 html,
 body {
-    background-color: rgb(21, 28, 47);
-    overflow-x: hidden;
+    background-color: rgb(20, 29, 47);
 }
 
 body {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1920px;
+    display:flex;
+    justify-content: center;
+    // margin-left: auto;
+    // margin-right: auto;
+    // max-width: 1920px;
+    border:2px solid;
 }
 
 body::-webkit-scrollbar {

@@ -4,8 +4,10 @@ footer {
     padding-top: 50px;
     padding-bottom: 80px;
     background-color: rgb(21, 28, 47);
-    position: relative;
+    position: absolute;
     z-index: 1000;
+    width: 100%;
+    left:0;
 
     >div {
         display: flex;

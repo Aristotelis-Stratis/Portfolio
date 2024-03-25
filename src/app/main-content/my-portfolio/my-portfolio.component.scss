@@ -10,6 +10,8 @@ section {
   padding-bottom: 100px;
   padding-left: 100px;
   padding-right: 100px;
+  max-width: 1920px;
+  border: 2px solid red;
 }
 
 .portfolioHeader {
@@ -32,7 +34,7 @@ section {
   padding-left: 70px;
   padding-right: 70px;
 
-  > h2 {
+  >h2 {
     font-size: 90px;
     font-weight: 700;
     line-height: 108px;
@@ -114,7 +116,7 @@ section {
   }
 
   .headerTitle {
-    > h2 {
+    >h2 {
       font-size: 66px;
     }
   }
@@ -156,6 +158,7 @@ section {
     padding-left: 10px;
     padding-right: 10px;
   }
+
   .myPortfolio {
     align-items: center;
   }
@@ -164,7 +167,7 @@ section {
     padding-left: 8px;
     padding-right: 8px;
 
-    > h2 {
+    >h2 {
       font-size: 45px;
     }
   }

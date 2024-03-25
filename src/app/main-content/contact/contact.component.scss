@@ -3,7 +3,8 @@ section {
   padding-bottom: 100px;
   position: relative;
   z-index: 999;
-  overflow: hidden;
+  max-width: 1920px;
+  border: 2px solid red;
 }
 
 .contactHeader {
@@ -81,14 +82,14 @@ section {
 .contactBackground {
   background-image: url("/assets/img/blur-shapes/part_7.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   position: absolute;
   z-index: 999;
-  width: 747.47px;
-  height: 902.79px;
-  transform: rotate(320deg);
-  left: -189px;
-  top: 600px;
+  width: 500px;
+  height: 300px;
+  transform: rotate(0deg);
+  left: -200px;
+  bottom: -3px;
 }
 
 .contactFormContainer {

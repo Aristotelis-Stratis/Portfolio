@@ -1,5 +1,8 @@
 section {
+  margin-top: 109.03px;
+  max-width: 1920px;
   background-color: rgb(20, 29, 47);
+  border:2px solid red;
 }
 
 .landingPage {
@@ -119,14 +122,24 @@ section {
 .landingPageBackground {
   height: 970px;
   width: 100%;
-  max-width: 1920px;
   background-image: url("/assets/img/fold.png");
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  top: 310px;
+  top: 140px;
+  left: 0;
   display: flex;
   z-index: 999;
+}
+
+.lpBackground {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 999;
+  top: 620px;
+
 }
 
 .socials {

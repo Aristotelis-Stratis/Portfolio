@@ -10,7 +10,8 @@ section {
   padding-left: 100px;
   padding-bottom: 100px;
   padding-top: 200px;
-  overflow: hidden;
+  max-width: 1920px;
+  border:2px solid red;
 }
 
 .myDevStack {
@@ -135,7 +136,7 @@ section {
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  left: -290px;
+  left: -350px;
   top: 20px;
   z-index: 1000;
   transform: rotate(31deg);
