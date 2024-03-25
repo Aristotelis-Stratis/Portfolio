@@ -261,12 +261,11 @@ section {
       font-size: 23px;
       transform: scale(1);
       transition: 0.2s ease-in-out;
-      opacity: 0.7;
       cursor: pointer;
 
       &:disabled {
-        background-color: #ccc;
-        color: #666;
+        background-color: rgba(182, 182, 182, 1);
+        color: white;
         cursor: not-allowed;
       }
 
@@ -275,10 +274,16 @@ section {
         color: #fff;
         opacity: 1;
         cursor: pointer;
+
+        &:hover {
+          background-color: rgb(0, 190, 232);
+        }
+
       }
     }
   }
 }
+
 
 .validMsg {
   display: flex;
@@ -376,6 +381,7 @@ section {
     display: flex;
     width: 100%;
     gap: 10px;
+
     >img {
       cursor: pointer;
       width: 25px;
