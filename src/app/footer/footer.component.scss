@@ -17,6 +17,10 @@ footer {
     }
 }
 
+.imprint {
+    justify-content: start !important;
+}
+
 .logo {
     cursor: pointer;
 
@@ -88,8 +92,11 @@ footer {
     }
 }
 
-@media (max-width: 841px) {
+@media (max-width: 900px) {
     footer {
+        padding-top: 30px;
+        padding-bottom: 40px;
+
         >div {
             display: flex;
             flex-direction: column;
@@ -101,6 +108,9 @@ footer {
     }
 
     .imprint {
+        gap: 0px !important;
+        justify-content: center !important;
+        flex-direction: row !important;
         padding-top: 30px !important;
     }
 }

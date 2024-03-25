@@ -59,7 +59,8 @@
     "MESSAGE_SENT_CONFIRMATION": "Die Nachricht wurde erfolgreich versendet!"
   },
   "FOOTER": {
-    "IMPRINT": "Impressum"
+    "IMPRINT": "Impressum",
+    "PRIVACY_POLICY":"Datenschutz"
   },
   "IMPRINT": {
     "TITLE": "Impressum",

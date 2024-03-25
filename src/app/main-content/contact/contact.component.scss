@@ -292,39 +292,6 @@ section {
   color: rgba(230, 28, 64, 1);
 }
 
-.formCheckbox {
-  width: 100%;
-  display: flex;
-  position: relative;
-
-  >label {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16.8px;
-    letter-spacing: 0em;
-    text-align: left;
-    position: relative;
-    width: 100%;
-    cursor: pointer;
-  }
-}
-
-.checkBoxLabel {
-  width: 100%;
-  display: block;
-  position: relative;
-  box-sizing: border-box;
-
-  >input {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 32px;
-    width: 32px;
-    cursor: pointer;
-  }
-}
-
 .privacyText {
   display: flex;
   align-items: center;
@@ -386,6 +353,17 @@ section {
       cursor: pointer;
       width: 25px;
       height: 25px;
+    }
+
+    >span {
+      >a {
+        text-decoration: none;
+        color: rgba(75, 71, 255, 1);
+
+        &:hover {
+          color: rgb(0, 190, 232);
+        }
+      }
     }
   }
 }

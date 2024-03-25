@@ -59,7 +59,8 @@
     "MESSAGE_SENT_CONFIRMATION": "The message has been sent successfully!"
   },
   "FOOTER": {
-    "IMPRINT": "Imprint"
+    "IMPRINT": "Imprint",
+    "PRIVACY_POLICY":"Privacy Policy"
   },
   "IMPRINT": {
     "TITLE": "Imprint",
