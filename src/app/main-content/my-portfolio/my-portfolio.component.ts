@@ -27,7 +27,7 @@ export class MyPortfolioComponent implements OnInit {
         stack: this.translate.instant('PROJECTS.EL_POLLO_LOCO.STACK'),
         description: this.translate.instant('PROJECTS.EL_POLLO_LOCO.DESCRIPTION'),
         imageUrl: '/assets/img/projects/el_pollo_loco.png',
-        liveTestUrl: 'https://live-test-url',
+        liveTestUrl: 'https://el-pollo-loco.aristotelis-stratis.com/',
         githubUrl: 'https://github.com/Aristotelis-Stratis/El-Pollo-Loco',
         flexDirection: 'row',
         textAlignment: 'left',
@@ -38,20 +38,20 @@ export class MyPortfolioComponent implements OnInit {
         description: this.translate.instant('PROJECTS.JOIN.DESCRIPTION'),
         imageUrl: '/assets/img/projects/JOIN.png',
         liveTestUrl: 'https://live-test-url',
-        githubUrl: 'https://github.com/Aristotelis-Stratis',
+        githubUrl: 'https://github.com/Aristotelis-Stratis/JOIN',
         flexDirection: 'row-reverse',
         textAlignment: 'right',
       },
-      {
-        title: this.translate.instant('PROJECTS.SIMPLE_CRM.TITLE'),
-        stack: this.translate.instant('PROJECTS.SIMPLE_CRM.STACK'),
-        description: this.translate.instant('PROJECTS.SIMPLE_CRM.DESCRIPTION'),
-        imageUrl: '/assets/img/projects/simple_CRM.png',
-        liveTestUrl: 'https://live-test-url',
-        githubUrl: 'https://github.com/Aristotelis-Stratis',
-        flexDirection: 'row',
-        textAlignment: 'left',
-      }
+      // {
+      //   title: this.translate.instant('PROJECTS.SIMPLE_CRM.TITLE'),
+      //   stack: this.translate.instant('PROJECTS.SIMPLE_CRM.STACK'),
+      //   description: this.translate.instant('PROJECTS.SIMPLE_CRM.DESCRIPTION'),
+      //   imageUrl: '/assets/img/projects/simple_CRM.png',
+      //   liveTestUrl: 'https://live-test-url',
+      //   githubUrl: 'https://github.com/Aristotelis-Stratis',
+      //   flexDirection: 'row',
+      //   textAlignment: 'left',
+      // }
     ];
   }
 
