@@ -11,10 +11,10 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
   styleUrls: ['./my-portfolio.component.scss'],
 })
 export class MyPortfolioComponent implements OnInit {
-  
+
   projects: any[] = [];
 
-  constructor(private translate: TranslateService) {}
+  constructor(private translate: TranslateService) { }
 
   ngOnInit(): void {
     this.loadProjects();
@@ -41,17 +41,7 @@ export class MyPortfolioComponent implements OnInit {
         githubUrl: 'https://github.com/Aristotelis-Stratis/JOIN',
         flexDirection: 'row-reverse',
         textAlignment: 'right',
-      },
-      // {
-      //   title: this.translate.instant('PROJECTS.SIMPLE_CRM.TITLE'),
-      //   stack: this.translate.instant('PROJECTS.SIMPLE_CRM.STACK'),
-      //   description: this.translate.instant('PROJECTS.SIMPLE_CRM.DESCRIPTION'),
-      //   imageUrl: '/assets/img/projects/simple_CRM.png',
-      //   liveTestUrl: 'https://live-test-url',
-      //   githubUrl: 'https://github.com/Aristotelis-Stratis',
-      //   flexDirection: 'row',
-      //   textAlignment: 'left',
-      // }
+      }
     ];
   }
 
