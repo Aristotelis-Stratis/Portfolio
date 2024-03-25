@@ -15,16 +15,17 @@ export class ContactComponent {
 
   http = inject(HttpClient)
 
-  constructor(private translate: TranslateService) {}
-  
+  constructor(private translate: TranslateService) { }
+
   contactData = {
     name: '',
     email: '',
     message: '',
   }
 
-  mailTest = false;
-  messageSent = false;
+  isPrivacyPolicyAccepted: boolean = false;
+  mailTest: boolean = false;
+  messageSent: boolean = false;
 
   post = {
     endPoint: 'https://aristotelis-stratis.com/sendMail.php',
@@ -44,6 +45,7 @@ export class ContactComponent {
           next: (response) => {
             ngForm.resetForm();
             this.messageSent = true;
+            this.isPrivacyPolicyAccepted = false;
             setTimeout(() => this.messageSent = false, 5000);
           },
           error: (error) => {
@@ -53,6 +55,7 @@ export class ContactComponent {
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       ngForm.resetForm();
       this.messageSent = true;
+      this.isPrivacyPolicyAccepted = false;
       setTimeout(() => this.messageSent = false, 5000);
 
     }

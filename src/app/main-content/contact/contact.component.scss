@@ -27,7 +27,7 @@ section {
   align-items: center;
   justify-content: start;
 
-  > h2 {
+  >h2 {
     font-size: 90px;
     font-weight: 700;
   }
@@ -58,7 +58,7 @@ section {
   display: flex;
   padding-bottom: 20px;
 
-  > h3 {
+  >h3 {
     font-size: 32px;
     font-weight: 700;
     line-height: 38px;
@@ -152,13 +152,13 @@ section {
   .valid-border {
     border: 1px solid rgba(112, 230, 28, 1) !important;
 
-    > input {
+    >input {
       background-image: url("/assets/img/shapes/form_valid.png");
       background-position: right 20px center;
       background-repeat: no-repeat;
     }
 
-    > textarea {
+    >textarea {
       background-image: url("/assets/img/shapes/form_valid.png");
       background-position: right 20px top 15px;
       background-repeat: no-repeat;
@@ -168,13 +168,13 @@ section {
   .invalid-border {
     border: 1px solid rgba(230, 28, 64, 1) !important;
 
-    > input {
+    >input {
       background-image: url("/assets/img/shapes/form_invalid.png");
       background-position: right 20px center;
       background-repeat: no-repeat;
     }
 
-    > textarea {
+    >textarea {
       background-image: url("/assets/img/shapes/form_invalid.png");
       background-position: right 20px top 15px;
       background-repeat: no-repeat;
@@ -196,7 +196,7 @@ section {
       border-color: rgba(28, 230, 182, 1);
     }
 
-    > .messageField {
+    >.messageField {
       color: white;
       font-family: "Poppins";
       font-size: 16px;
@@ -249,7 +249,7 @@ section {
     justify-content: center;
     flex-direction: column;
 
-    > button {
+    >button {
       background-color: #00bee8;
       width: 253px;
       height: 58px;
@@ -292,7 +292,7 @@ section {
   display: flex;
   position: relative;
 
-  > label {
+  >label {
     font-size: 14px;
     font-weight: 400;
     line-height: 16.8px;
@@ -310,7 +310,7 @@ section {
   position: relative;
   box-sizing: border-box;
 
-  > input {
+  >input {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -324,8 +324,8 @@ section {
   display: flex;
   align-items: center;
 
-  > span {
-    > a {
+  >span {
+    >a {
       color: rgba(75, 71, 255, 1);
       text-decoration: none;
 
@@ -348,13 +348,12 @@ section {
   padding: 5px;
   cursor: pointer;
 
-  > a {
+  >a {
     display: flex;
   }
 
   &:hover {
-    filter: brightness(0) saturate(100%) invert(47%) sepia(81%) saturate(1427%)
-      hue-rotate(155deg) brightness(104%) contrast(101%);
+    filter: brightness(0) saturate(100%) invert(47%) sepia(81%) saturate(1427%) hue-rotate(155deg) brightness(104%) contrast(101%);
   }
 }
 
@@ -366,13 +365,32 @@ section {
   text-shadow: 1px 1px 2px black;
 }
 
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: start;
+
+  >label {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    >img {
+      cursor: pointer;
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
 @media (max-width: 1120px) {
   .contactHeader {
     gap: 8px;
   }
 
   .contactTitle {
-    > h2 {
+    >h2 {
       font-size: 66px;
     }
   }
@@ -400,7 +418,7 @@ section {
   }
 
   .formSubmit {
-    > button {
+    >button {
       width: 195px !important;
       height: 49px !important;
       font-size: 16px !important;
@@ -422,6 +440,7 @@ section {
     padding-left: 50px;
     padding-right: 50px;
   }
+
   .goUp {
     right: 50px;
   }
@@ -448,6 +467,7 @@ section {
     padding-left: 20px;
     padding-right: 20px;
   }
+
   .goUp {
     right: 20px;
   }
