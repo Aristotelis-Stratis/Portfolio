@@ -27,20 +27,16 @@ section {
   justify-content: center;
   width: fit-content;
   height: fit-content;
+  background-image: url('/assets/img/blur-shapes/part_1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0%;
 }
 
 .myPortrait {
   width: 600px;
   height: calc(100% - 277px);
   z-index: 999;
-  object-fit: contain;
-}
-
-.myPortraitBackground {
-  position: absolute;
-  z-index: 998;
-  height: calc(100% - 277px);
-  width: 800px;
   object-fit: contain;
 }
 
@@ -360,7 +356,7 @@ section {
 
   .myPortrait {
     width: 350px;
-    height: fit-content;
+    height: 100%;
   }
 
   .myPortraitBackground {
