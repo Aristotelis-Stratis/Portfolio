@@ -2,7 +2,7 @@ section {
   margin-top: 109.03px;
   max-width: 1920px;
   background-color: rgb(20, 29, 47);
-  border:2px solid red;
+  border: 2px solid red;
 }
 
 .landingPage {
@@ -118,19 +118,6 @@ section {
   }
 }
 
-// .landingPageBackground {
-//   height: 970px;
-//   width: 100%;
-//   background-image: url("/assets/img/fold.png");
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   position: absolute;
-//   top: 140px;
-//   left: 0;
-//   display: flex;
-//   z-index: 999;
-// }
-
 .lpBackground {
   width: 100%;
   height: 100%;
@@ -221,12 +208,6 @@ section {
   }
 }
 
-@media (max-width: 1740px) {
-  .landingPageBackground {
-    top: 370px;
-  }
-}
-
 @media (max-width: 1570px) {
   .titleOne span {
     font-size: 48.5px;
@@ -241,10 +222,6 @@ section {
   .titleThree span {
     font-size: 58px;
     line-height: 55.5px;
-  }
-
-  .landingPageBackground {
-    top: 420px;
   }
 }
 
@@ -267,10 +244,6 @@ section {
   .titleThree span {
     font-size: 52.8px;
     line-height: 55.5px;
-  }
-
-  .landingPageBackground {
-    top: 450px;
   }
 
   .lpText {
@@ -301,8 +274,8 @@ section {
     width: 525px;
   }
 
-  .landingPageBackground {
-    top: 325px;
+  .lpBackground {
+    top: 400px;
   }
 }
 
@@ -328,6 +301,10 @@ section {
 
   .myPortraitBackground {
     width: 650px;
+  }
+
+  .lpBackground {
+    top: 300px;
   }
 }
 
@@ -357,7 +334,7 @@ section {
     width: 100%;
     height: 100%;
     margin-left: unset;
-    margin-top: 15px;
+    margin-top: 109.03px;
   }
 
   .lpText {
@@ -393,9 +370,9 @@ section {
     height: unset;
   }
 
-  .landingPageBackground {
-    top: 300px;
-    height: 450px;
+  .lpBackground {
+    height: 40%;
+    top: 350px;
   }
 
   .lpText {
@@ -473,24 +450,6 @@ section {
   }
 }
 
-@media (max-width:750px) {
-  .landingPageBackground {
-    top: 315px;
-  }
-}
-
-@media (max-width: 700px) {
-  .landingPageBackground {
-    top: 332px;
-  }
-}
-
-@media (max-width: 610px) {
-  .landingPageBackground {
-    top: 345px;
-  }
-}
-
 @media (max-width: 535px) {
   .titleOne span {
     font-size: 25.5px;
@@ -505,6 +464,10 @@ section {
   .titleThree span {
     font-size: 26px;
     line-height: 10px;
+  }
+  .lpBackground {
+    height: 25%;
+    top: 415px;
   }
 }
 

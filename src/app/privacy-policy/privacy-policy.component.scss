@@ -5,6 +5,10 @@ section {
     padding: 50px 100px;
     z-index: 1000;
     max-width: 1920px;
+
+    >div {
+        width: 100%;
+    }
 }
 
 h1 {
@@ -19,7 +23,7 @@ h1 {
     left: 0;
     z-index: 999;
     top: 500px;
-  }
+}
 
 h2,
 h3 {
@@ -44,7 +48,7 @@ p {
 @media(max-width: 841px) {
 
     section {
-        padding: 50px 30px;
+        padding: 50px 25px;
     }
 }
 

@@ -5,6 +5,15 @@ section {
     padding: 50px 100px;
     z-index: 1000;
     min-height: 80vh;
+    width: 100vw;
+    max-width: 1920px;
+    border: 2px solid red;
+    display: flex;
+
+    >div {
+        width: 100%;
+        border: 2px solid yellow;
+    }
 }
 
 h1 {
@@ -12,17 +21,13 @@ h1 {
     margin-block-end: 40px;
 }
 
-.landingPageBackground {
-    height: 970px;
+.lpBackground {
     width: 100%;
-    max-width: 1920px;
-    background-image: url('/assets/img/fold.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 50%;
     position: absolute;
-    bottom: 0;
-    display: flex;
+    left: 0;
     z-index: 999;
+    top: 500px;
 }
 
 h2,
@@ -44,16 +49,11 @@ p {
 @media(max-width: 841px) {
 
     section {
-        padding: 50px 30px;
+        padding: 50px 25px;
     }
 
     h1 {
         font-size: 66px;
-    }
-
-    .landingPageBackground {
-        top: 285px;
-        height: 450px;
     }
 }
 
