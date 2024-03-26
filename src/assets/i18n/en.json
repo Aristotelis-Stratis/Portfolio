@@ -60,7 +60,7 @@
   },
   "FOOTER": {
     "IMPRINT": "Imprint",
-    "PRIVACY_POLICY":"Privacy Policy"
+    "PRIVACY_POLICY": "Privacy Policy"
   },
   "IMPRINT": {
     "TITLE": "Imprint",
@@ -146,5 +146,10 @@
     "RETENTION_OF_CONTACT_INQUIRY_DATA": "The data sent to us via contact inquiries remain with us until you ask us to delete them, revoke your consent to storage, or the purpose for data storage ceases to apply (e.g., after the processing of your concern has been completed). Mandatory statutory provisions - in particular retention periods - remain unaffected.",
     "SOURCE": "Source",
     "SOURCE_TEXT": "<a href='https://www.e-recht24.de'>https://www.e-recht24.de</a>"
+  },
+  "TERMS": {
+    "PRIVACY_POLICY": "I've read the",
+    "PRIVACY_POLICY_LINK": "Privacy Policy",
+    "AGREE_TO_PROCESSING": "and agree to the processing of my data as outlined."
   }
 }

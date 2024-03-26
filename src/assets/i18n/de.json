@@ -60,7 +60,7 @@
   },
   "FOOTER": {
     "IMPRINT": "Impressum",
-    "PRIVACY_POLICY":"Datenschutz"
+    "PRIVACY_POLICY": "Datenschutz"
   },
   "IMPRINT": {
     "TITLE": "Impressum",
@@ -146,5 +146,10 @@
     "RETENTION_OF_CONTACT_INQUIRY_DATA": "Die von Ihnen an uns per Kontaktanfragen übersandten Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen - insbesondere gesetzliche Aufbewahrungsfristen - bleiben unberührt.",
     "SOURCE": "Quelle",
     "SOURCE_TEXT": "<a href='https://www.e-recht24.de'>https://www.e-recht24.de</a>"
+  },
+  "TERMS": {
+    "PRIVACY_POLICY": "Ich habe die",
+    "PRIVACY_POLICY_LINK": "Datenschutzerklärung",
+    "AGREE_TO_PROCESSING": "gelesen und stimme der Verarbeitung meiner Daten wie dargelegt zu."
   }
 }
