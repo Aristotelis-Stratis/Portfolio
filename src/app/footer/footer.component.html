@@ -1,21 +1,24 @@
 <footer>
-    <div>
-        <div class="logo">
-            <a href="#header" (click)="scrollToTop()"><span>Aristotelis</span></a>
+    <section>
+        <div>
+            <div class="logo">
+                <a href="#header" (click)="scrollToTop()"><span>Aristotelis</span></a>
+            </div>
+            <div class="copyright">
+                <span>© Aristotelis Stratis 2024</span>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/Aristotelis-Stratis" target="_blank"><img
+                        src="/assets/img/buttons/Github.png" alt="Github"></a>
+                <a href="mailto:stratis.dev@outlook.com"><img src="/assets/img/buttons/Email.png" alt="Email"></a>
+                <a href="https://www.linkedin.com/in/aristotelis-stratis-9647002b8" target="_blank"><img
+                        src="/assets/img/buttons/LinkedIn.png" alt="LinkedIn"></a>
+            </div>
         </div>
-        <div class="copyright">
-            <span>© Aristotelis Stratis 2024</span>
+        <div class="imprint">
+            <a [routerLink]="['imprint']"><span>{{ 'FOOTER.IMPRINT' | translate }}</span></a>
+            &nbsp; | &nbsp;
+            <a [routerLink]="['privacy-policy']"><span>{{ 'FOOTER.PRIVACY_POLICY' | translate }}</span></a>
         </div>
-        <div class="social-links">
-            <a href="https://github.com/Aristotelis-Stratis" target="_blank"><img src="/assets/img/buttons/Github.png" alt="Github"></a>
-            <a href="mailto:stratis.dev@outlook.com"><img src="/assets/img/buttons/Email.png" alt="Email"></a>
-            <a href="https://www.linkedin.com/in/aristotelis-stratis-9647002b8" target="_blank"><img
-                    src="/assets/img/buttons/LinkedIn.png" alt="LinkedIn"></a>
-        </div>
-    </div>
-    <div class="imprint">
-        <a [routerLink]="['imprint']"><span>{{ 'FOOTER.IMPRINT' | translate }}</span></a>
-        &nbsp; | &nbsp; 
-        <a [routerLink]="['privacy-policy']"><span>{{ 'FOOTER.PRIVACY_POLICY' | translate }}</span></a>
-    </div>
+    </section>
 </footer>
