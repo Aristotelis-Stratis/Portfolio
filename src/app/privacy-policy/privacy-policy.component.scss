@@ -4,6 +4,7 @@ section {
     margin-top: 109px;
     padding: 50px 100px;
     z-index: 1000;
+    max-width: 1920px;
 }
 
 h1 {
@@ -11,18 +12,14 @@ h1 {
     margin-block-end: 40px;
 }
 
-.landingPageBackground {
-    height: 970px;
+.lpBackground {
     width: 100%;
-    max-width: 1920px;
-    background-image: url('/assets/img/fold.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 100%;
     position: absolute;
-    top: 300px;
-    display: flex;
+    left: 0;
     z-index: 999;
-}
+    top: 500px;
+  }
 
 h2,
 h3 {
@@ -48,11 +45,6 @@ p {
 
     section {
         padding: 50px 30px;
-    }
-
-    .landingPageBackground {
-        top: 285px;
-        height: 450px;
     }
 }
 

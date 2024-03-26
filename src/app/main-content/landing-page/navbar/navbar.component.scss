@@ -2,18 +2,25 @@
   width: 100%;
   height: 109.03px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   color: rgb(255, 255, 255);
   background-color: rgba(20, 29, 47, 1);
-  box-sizing: border-box;
-  padding-left: 100px;
-  padding-right: 100px;
   position: fixed;
   top: 0;
   left:0;
   z-index: 2001;
   border:2px solid yellow;
+}
+
+.navigation {
+  display:flex;
+  justify-content: space-between;
+  max-width: 1920px;
+  width:100%;
+  box-sizing: border-box;
+  padding-left:100px;
+  padding-right:100px;
 }
 
 .logo {

@@ -10,7 +10,6 @@ section {
   flex-direction: row;
   width: 100%;
   box-sizing: border-box;
-  margin-top: 109.03px;
   padding-left: 100px;
   padding-right: 100px;
   align-items: center;
@@ -119,18 +118,18 @@ section {
   }
 }
 
-.landingPageBackground {
-  height: 970px;
-  width: 100%;
-  background-image: url("/assets/img/fold.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 140px;
-  left: 0;
-  display: flex;
-  z-index: 999;
-}
+// .landingPageBackground {
+//   height: 970px;
+//   width: 100%;
+//   background-image: url("/assets/img/fold.png");
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   position: absolute;
+//   top: 140px;
+//   left: 0;
+//   display: flex;
+//   z-index: 999;
+// }
 
 .lpBackground {
   width: 100%;
@@ -138,8 +137,7 @@ section {
   position: absolute;
   left: 0;
   z-index: 999;
-  top: 620px;
-
+  top: 500px;
 }
 
 .socials {

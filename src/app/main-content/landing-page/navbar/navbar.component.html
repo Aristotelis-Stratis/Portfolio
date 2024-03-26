@@ -1,48 +1,34 @@
 <div class="nav">
-  <div class="logo">
-    <a [routerLink]="['/']" (click)="scrollToTop()">Aristotelis</a>
-  </div>
-  <div class="desktopNav">
-    <a href="#aboutMe">{{ "HEADER.ABOUT" | translate }}</a>
-    <a href="#mySkills">{{ "HEADER.SKILLS" | translate }}</a>
-    <a href="#portfolio">{{ "HEADER.PORTFOLIO" | translate }}</a>
-    <span class="translation">
-      <span (click)="switchLanguage('en')" [ngClass]="{ 'active': getCurrentLanguage() === 'en' }">EN</span>|
-      <span (click)="switchLanguage('de')" [ngClass]="{ 'active': getCurrentLanguage() === 'de' }">DE</span>
-    </span>
-  </div>
-  <div class="mobileMenu" (click)="toggleMenu()">
-    <img
-      *ngIf="!isMenuOpen && transitionState !== 'open'"
-      src="/assets/img/burger-menu/burger.png"
-      alt="Open Menu"
-    />
-    <img
-      *ngIf="transitionState === 'open'"
-      src="/assets/img/burger-menu/burger_transition.png"
-      alt="Opening Menu"
-    />
-    <img
-      *ngIf="isMenuOpen && transitionState !== 'close'"
-      src="/assets/img/burger-menu/close.png"
-      alt="Close Menu"
-    />
-    <img
-      *ngIf="transitionState === 'close'"
-      src="/assets/img/burger-menu/close_transition.png"
-      alt="Closing Menu"
-    />
-  </div>
-  <div class="mobileNav" [class.open]="isMenuOpen">
-    <div><a href="#aboutMe" (click)="closeMenu()">{{ "HEADER.ABOUT" | translate }}</a></div>
-    <div><a href="#mySkills" (click)="closeMenu()">{{ "HEADER.SKILLS" | translate }}</a></div>
-    <div><a href="#portfolio" (click)="closeMenu()">{{ "HEADER.PORTFOLIO" | translate }}</a></div>
-    <div><a href="#contact" (click)="closeMenu()">{{ "HEADER.CONTACT" | translate }}</a></div>
-    <div>
+  <div class="navigation">
+    <div class="logo">
+      <a [routerLink]="['/']" (click)="scrollToTop()">Aristotelis</a>
+    </div>
+    <div class="desktopNav">
+      <a href="#aboutMe">{{ "HEADER.ABOUT" | translate }}</a>
+      <a href="#mySkills">{{ "HEADER.SKILLS" | translate }}</a>
+      <a href="#portfolio">{{ "HEADER.PORTFOLIO" | translate }}</a>
       <span class="translation">
         <span (click)="switchLanguage('en')" [ngClass]="{ 'active': getCurrentLanguage() === 'en' }">EN</span>|
         <span (click)="switchLanguage('de')" [ngClass]="{ 'active': getCurrentLanguage() === 'de' }">DE</span>
       </span>
+    </div>
+    <div class="mobileMenu" (click)="toggleMenu()">
+      <img *ngIf="!isMenuOpen && transitionState !== 'open'" src="/assets/img/burger-menu/burger.png" alt="Open Menu" />
+      <img *ngIf="transitionState === 'open'" src="/assets/img/burger-menu/burger_transition.png" alt="Opening Menu" />
+      <img *ngIf="isMenuOpen && transitionState !== 'close'" src="/assets/img/burger-menu/close.png" alt="Close Menu" />
+      <img *ngIf="transitionState === 'close'" src="/assets/img/burger-menu/close_transition.png" alt="Closing Menu" />
+    </div>
+    <div class="mobileNav" [class.open]="isMenuOpen">
+      <div><a href="#aboutMe" (click)="closeMenu()">{{ "HEADER.ABOUT" | translate }}</a></div>
+      <div><a href="#mySkills" (click)="closeMenu()">{{ "HEADER.SKILLS" | translate }}</a></div>
+      <div><a href="#portfolio" (click)="closeMenu()">{{ "HEADER.PORTFOLIO" | translate }}</a></div>
+      <div><a href="#contact" (click)="closeMenu()">{{ "HEADER.CONTACT" | translate }}</a></div>
+      <div>
+        <span class="translation">
+          <span (click)="switchLanguage('en')" [ngClass]="{ 'active': getCurrentLanguage() === 'en' }">EN</span>|
+          <span (click)="switchLanguage('de')" [ngClass]="{ 'active': getCurrentLanguage() === 'de' }">DE</span>
+        </span>
+      </div>
     </div>
   </div>
 </div>
