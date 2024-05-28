@@ -20,6 +20,8 @@ export class MyPortfolioComponent implements OnInit {
     this.loadProjects();
   }
 
+
+  
   loadProjects(): void {
     this.projects = [
       {
