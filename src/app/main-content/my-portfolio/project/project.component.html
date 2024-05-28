@@ -13,10 +13,10 @@
             <div class="projectDescription">
                 <span>{{ project.description | translate }}</span>
             </div>
-            <div class="projectButtonContainer">
+            <div class="projectButtonContainer" *ngIf="!project.isWIP">
                 <button class="testButton" (click)="goToUrl(project.liveTestUrl)">Live Test</button>
                 <button class="githubButton" (click)="goToUrl(project.githubUrl)">Github</button>
-            </div>
+              </div>
         </div>
     </div>
 </section>

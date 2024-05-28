@@ -32,14 +32,14 @@
       "DESCRIPTION": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and bottles to fight against the chicken attacking the village."
     },
     "JOIN": {
-      "TITLE": "JOIN PLACEHOLDER",
+      "TITLE": "JOIN",
       "STACK": "JavaScript | HTML | CSS",
       "DESCRIPTION": "Enhance productivity with a Kanban-inspired task manager. Easily create tasks, drag and drop to organize, assign users, and categorize for streamlined project tracking."
     },
-    "SIMPLE_CRM": {
-      "TITLE": "Simple CRM PLACEHOLDER",
+    "DABUBBLE": {
+      "TITLE": "DABubble soon\u2122",
       "STACK": "Angular | Firebase | SCSS",
-      "DESCRIPTION": "A very simple Customer Relationship Management system working with CRUD functionality."
+      "DESCRIPTION": "A modern chat messenger inspired by Slack. Connect with your colleagues and exchange ideas and information in real-time."
     }
   },
   "CONTACT_SECTION": {
