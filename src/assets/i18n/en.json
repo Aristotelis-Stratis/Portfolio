@@ -14,7 +14,7 @@
   "ABOUT_ME": {
     "TITLE": "About me",
     "INTRO_TEXT": "Hello! I'm Aristotelis Stratis, a frontend developer from Eckernförde, Germany. My journey is fueled by the belief that innovation can significantly enhance our daily lives. I'm now blending this passion with my profession to develop impactful digital experiences.",
-    "HISTORY_TEXT": "More than a year ago, I took the step towards frontend development to expand my skills and professional horizons. The Developer Academy was crucial in this transformation, providing unmatched support and guidance to realize my goals.",
+    "HISTORY_TEXT": "More than a year ago, I took the step towards frontend development to expand my skills and professional horizons. The Developer Akademie was crucial in this transformation, providing unmatched support and guidance to realize my goals.",
     "BACKGROUND_TEXT": "Transitioning from a culinary background, where I developed my teamwork and leadership capabilities, I've brought a meticulous attention to detail and a commitment to excellence into the tech sphere, applying these assets directly to my programming work."
   },
   "MY_SKILLS": {
@@ -45,7 +45,7 @@
   "CONTACT_SECTION": {
     "TITLE": "Contact",
     "TEXT": "Got a problem to solve?",
-    "CONTENT_ONE": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+    "CONTENT_ONE": "Contact me through this form. I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
     "CONTENT_TWO": "<span>Need a Frontend developer?&nbsp;<b> Contact me!</b></span>"
   },
   "FORM": {
