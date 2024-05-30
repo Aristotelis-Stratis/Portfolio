@@ -1,27 +1,24 @@
-# Portfolio
+# My Portfolio
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.3.
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+In my portfolio, I have incorporated a variety of technologies and tools to showcase my skills and enhance the user experience:
 
-## Code scaffolding
+- **Pipes:** Utilized Angular pipes for efficient data transformation and display.
+- **Models:** Developed comprehensive data models, including translation models, to manage and structure data effectively.
+- **AOS Library (Animate On Scroll):** Integrated the AOS library to add smooth and visually appealing animations as users scroll through the page.
+- **Contact Form with PHP Backend:** Implemented a fully functional contact form connected to a PHP backend for seamless message handling and communication.
+- **SCSS (Sass):** Employed SCSS for modular and maintainable styling, enabling efficient and scalable CSS development.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+[Visit My Portfolio](https://aristotelis-stratis.com/)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Contact
 
-## Running unit tests
+If you have any questions or would like to get in touch, feel free to contact me at [aristratis@protonmail.com](mailto:aristratis@protonmail.com).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Thank you for visiting my portfolio! I look forward to connecting with you.
