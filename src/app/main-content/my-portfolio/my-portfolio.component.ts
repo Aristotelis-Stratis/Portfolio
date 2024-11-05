@@ -21,7 +21,6 @@ export class MyPortfolioComponent implements OnInit {
   }
 
 
-  
   loadProjects(): void {
     this.projects = [
       {
@@ -51,15 +50,16 @@ export class MyPortfolioComponent implements OnInit {
         stack: this.translate.instant('PROJECTS.DABUBBLE.STACK'),
         description: this.translate.instant('PROJECTS.DABUBBLE.DESCRIPTION'),
         imageUrl: '/assets/img/projects/DaBubble.png',
-        liveTestUrl: '',
-        githubUrl: '',
+        liveTestUrl: 'https://dabubble.aristotelis-stratis.com/',
+        githubUrl: 'https://github.com/Aristotelis-Stratis/DABubble',
         flexDirection: 'row',
         textAlignment: 'left',
-        isWIP: true
+        isWIP: false
       }
     ];
   }
 
+  
   switchLanguage(language: string) {
     this.translate.use(language);
   }
