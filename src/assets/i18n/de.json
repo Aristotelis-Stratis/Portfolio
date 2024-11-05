@@ -37,8 +37,8 @@
       "DESCRIPTION": "Steigern Sie die Produktivität mit einem von Kanban inspirierten Aufgabenmanager. Erstellen Sie problemlos Aufgaben, ziehen Sie sie zum Organisieren, weisen Sie Benutzer zu und kategorisieren Sie sie für eine effiziente Projektnachverfolgung."
     },
     "DABUBBLE": {
-      "TITLE": "DABubble soon\u2122",
-      "STACK": "Angular | Firebase | SCSS",
+      "TITLE": "DABubble",
+      "STACK": "Angular | TypeScript | Material | Firebase | SCSS",
       "DESCRIPTION": "Ein moderner Chat-Messenger, inspiriert von Slack. Vernetzen Sie sich mit Ihren Kollegen und tauschen Sie Ideen und Informationen in Echtzeit aus."
     }
   },

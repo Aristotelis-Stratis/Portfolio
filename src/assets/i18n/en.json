@@ -37,8 +37,8 @@
       "DESCRIPTION": "Enhance productivity with a Kanban-inspired task manager. Easily create tasks, drag and drop to organize, assign users, and categorize for streamlined project tracking."
     },
     "DABUBBLE": {
-      "TITLE": "DABubble soon\u2122",
-      "STACK": "Angular | Firebase | SCSS",
+      "TITLE": "DABubble",
+      "STACK": "Angular | TypeScript | Material | Firebase | SCSS",
       "DESCRIPTION": "A modern chat messenger inspired by Slack. Connect with your colleagues and exchange ideas and information in real-time."
     }
   },
